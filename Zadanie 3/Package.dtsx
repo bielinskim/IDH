@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{D57BE02F-D471-40E3-8DAD-9BB4E9A5DC57}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{1D1197FF-9D67-4148-8F93-9BD35216652F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -58,12 +58,12 @@
           version="1">
           <components>
             <component
-              refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source"
+              refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
               localeId="1045"
-              name="Flat File Source"
+              name="Flat File Source YT Data Load"
               usesDispositions="true"
               version="1">
               <properties>
@@ -78,25 +78,25 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Connections[FlatFileConnection]"
+                  refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Connections[FlatFileConnection]"
                   connectionManagerID="{2AEEDBD2-ED44-4958-8684-94E28FA0A9FA}:external"
                   connectionManagerRefId="Project.ConnectionManagers[YT Data]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output]"
+                  refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output]"
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[video_id]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[video_id]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[video_id]"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[video_id]"
                       length="50"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[video_id]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[video_id]"
                       name="video_id"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -111,14 +111,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[trending_date]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[trending_date]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[trending_date]"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[trending_date]"
                       length="50"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[trending_date]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[trending_date]"
                       name="trending_date"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -133,14 +133,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[title]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[title]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[title]"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[title]"
                       length="200"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[title]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[title]"
                       name="title"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -155,14 +155,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[channel_title]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[channel_title]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[channel_title]"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[channel_title]"
                       length="1000"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[channel_title]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[channel_title]"
                       name="channel_title"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -177,14 +177,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[category_id]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[category_id]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[category_id]"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[category_id]"
                       length="200"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[category_id]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[category_id]"
                       name="category_id"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -199,14 +199,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[publish_time]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[publish_time]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[publish_time]"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[publish_time]"
                       length="50"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[publish_time]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[publish_time]"
                       name="publish_time"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -221,14 +221,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[tags]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[tags]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[tags]"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[tags]"
                       length="2000"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[tags]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[tags]"
                       name="tags"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -243,14 +243,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[views]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[views]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[views]"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[views]"
                       length="1000"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[views]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[views]"
                       name="views"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -265,14 +265,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[likes]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[likes]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[likes]"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[likes]"
                       length="1000"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[likes]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[likes]"
                       name="likes"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -287,14 +287,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[dislikes]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[dislikes]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[dislikes]"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[dislikes]"
                       length="1000"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[dislikes]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[dislikes]"
                       name="dislikes"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -309,14 +309,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[comment_count]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[comment_count]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[comment_count]"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[comment_count]"
                       length="1000"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[comment_count]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[comment_count]"
                       name="comment_count"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -331,14 +331,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[thumbnail_link]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[thumbnail_link]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[thumbnail_link]"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[thumbnail_link]"
                       length="1000"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[thumbnail_link]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[thumbnail_link]"
                       name="thumbnail_link"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -353,14 +353,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[comments_disabled]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[comments_disabled]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[comments_disabled]"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[comments_disabled]"
                       length="50"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[comments_disabled]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[comments_disabled]"
                       name="comments_disabled"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -375,14 +375,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[ratings_disabled]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[ratings_disabled]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ratings_disabled]"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[ratings_disabled]"
                       length="50"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[ratings_disabled]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[ratings_disabled]"
                       name="ratings_disabled"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -397,14 +397,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[video_error_or_removed]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[video_error_or_removed]"
                       codePage="1250"
                       dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[video_error_or_removed]"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[video_error_or_removed]"
                       length="50"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[video_error_or_removed]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[video_error_or_removed]"
                       name="video_error_or_removed"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -419,13 +419,13 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[description]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[description]"
                       codePage="1250"
                       dataType="text"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[description]"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[description]"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[description]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[description]"
                       name="description"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -443,124 +443,124 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[video_id]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[video_id]"
                       codePage="1250"
                       dataType="str"
                       length="50"
                       name="video_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[trending_date]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[trending_date]"
                       codePage="1250"
                       dataType="str"
                       length="50"
                       name="trending_date" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[title]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[title]"
                       codePage="1250"
                       dataType="str"
                       length="200"
                       name="title" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[channel_title]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[channel_title]"
                       codePage="1250"
                       dataType="str"
                       length="1000"
                       name="channel_title" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[category_id]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[category_id]"
                       codePage="1250"
                       dataType="str"
                       length="200"
                       name="category_id" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[publish_time]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[publish_time]"
                       codePage="1250"
                       dataType="str"
                       length="50"
                       name="publish_time" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[tags]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[tags]"
                       codePage="1250"
                       dataType="str"
                       length="2000"
                       name="tags" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[views]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[views]"
                       codePage="1250"
                       dataType="str"
                       length="1000"
                       name="views" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[likes]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[likes]"
                       codePage="1250"
                       dataType="str"
                       length="1000"
                       name="likes" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[dislikes]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[dislikes]"
                       codePage="1250"
                       dataType="str"
                       length="1000"
                       name="dislikes" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[comment_count]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[comment_count]"
                       codePage="1250"
                       dataType="str"
                       length="1000"
                       name="comment_count" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[thumbnail_link]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[thumbnail_link]"
                       codePage="1250"
                       dataType="str"
                       length="1000"
                       name="thumbnail_link" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[comments_disabled]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[comments_disabled]"
                       codePage="1250"
                       dataType="str"
                       length="50"
                       name="comments_disabled" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ratings_disabled]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[ratings_disabled]"
                       codePage="1250"
                       dataType="str"
                       length="50"
                       name="ratings_disabled" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[video_error_or_removed]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[video_error_or_removed]"
                       codePage="1250"
                       dataType="str"
                       length="50"
                       name="video_error_or_removed" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[description]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[description]"
                       codePage="1250"
                       dataType="text"
                       name="description" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Error Output]"
+                  refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Error Output]"
                   isErrorOut="true"
                   name="Flat File Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       codePage="1250"
                       dataType="text"
                       description="Flat File Source Error Output Column"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
                       name="Flat File Source Error Output Column" />
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -3487,105 +3487,105 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="video_id"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[video_id]" />
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[video_id]" />
                     <inputColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Inputs[Input 0].Columns[trending_date]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="trending_date"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[trending_date]" />
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[trending_date]" />
                     <inputColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Inputs[Input 0].Columns[title]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="200"
                       cachedName="title"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[title]" />
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[title]" />
                     <inputColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Inputs[Input 0].Columns[channel_title]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="1000"
                       cachedName="channel_title"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[channel_title]" />
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[channel_title]" />
                     <inputColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Inputs[Input 0].Columns[category_id]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="200"
                       cachedName="category_id"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[category_id]" />
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[category_id]" />
                     <inputColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Inputs[Input 0].Columns[publish_time]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="publish_time"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[publish_time]" />
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[publish_time]" />
                     <inputColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Inputs[Input 0].Columns[views]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="1000"
                       cachedName="views"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[views]" />
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[views]" />
                     <inputColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Inputs[Input 0].Columns[likes]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="1000"
                       cachedName="likes"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[likes]" />
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[likes]" />
                     <inputColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Inputs[Input 0].Columns[dislikes]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="1000"
                       cachedName="dislikes"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[dislikes]" />
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[dislikes]" />
                     <inputColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Inputs[Input 0].Columns[comment_count]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="1000"
                       cachedName="comment_count"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[comment_count]" />
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[comment_count]" />
                     <inputColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Inputs[Input 0].Columns[thumbnail_link]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="1000"
                       cachedName="thumbnail_link"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[thumbnail_link]" />
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[thumbnail_link]" />
                     <inputColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Inputs[Input 0].Columns[comments_disabled]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="comments_disabled"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[comments_disabled]" />
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[comments_disabled]" />
                     <inputColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Inputs[Input 0].Columns[ratings_disabled]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ratings_disabled"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[ratings_disabled]" />
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[ratings_disabled]" />
                     <inputColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Inputs[Input 0].Columns[video_error_or_removed]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="video_error_or_removed"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[video_error_or_removed]" />
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[video_error_or_removed]" />
                     <inputColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Inputs[Input 0].Columns[tags]"
                       cachedCodepage="1250"
                       cachedDataType="str"
                       cachedLength="2000"
                       cachedName="tags"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output].Columns[tags]" />
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[tags]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -3757,979 +3757,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       dataType="i4"
                       lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Channel].Columns[channel_id]"
                       name="channel_id" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component 1"
-              componentClassID="Microsoft.ManagedComponentHost"
-              contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;13"
-              description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
-              name="Script Component 1"
-              version="13">
-              <properties>
-                <property
-                  dataType="System.String"
-                  description="Stores the source code of the component"
-                  isArray="true"
-                  name="SourceCode"
-                  state="cdata">
-                  <arrayElements
-                    arrayElementCount="33">
-                    <arrayElement
-                      dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
-*  Microsoft SQL Server Integration Services component wrapper
-*  This module defines the base class for your component
-*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
-
-using System;
-using System.Data;
-using Microsoft.SqlServer.Dts.Pipeline;
-using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
-using Microsoft.SqlServer.Dts.Runtime.Wrapper;
-
-public class UserComponent: ScriptComponent
-{
-    public Connections Connections;
-    public Variables Variables;
-    public UserComponent()
-    {
-        Connections = new Connections(this);
-        Variables = new Variables(this);
-    }
-
-    public Output0Buffer Output0Buffer;
-
-    public virtual void FinishOutputs()
-    {
-    }
-
-    private void MarkOutputsFinished()
-    {
-
-        if (null != Output0Buffer)
-        {
-            Output0Buffer.SetEndOfRowset();
-            Output0Buffer = null;
-        }
-
-    }
-
-    public override void PrimeOutput(int Outputs, int[] OutputIDs, PipelineBuffer[] Buffers, OutputNameMap OutputMap)
-    {
-       for(int Idx = 0; Idx < Outputs; Idx++)
-       {
-            if(OutputIDs[Idx] == GetOutputID(OutputMap, @"Output 0"))
-            {
-                Output0Buffer = new Output0Buffer(Buffers[Idx], GetColumnIndexes(OutputIDs[Idx]), OutputMap);
-            }
-        }
-
-        CreateNewOutputRows();
-
-        FinishOutputs();
-        MarkOutputsFinished();
-
-    }
-
-    public virtual void CreateNewOutputRows()
-    {
-    }
-
-}
-
-public class Connections
-{
-    ScriptComponent ParentComponent;
-
-    public Connections(ScriptComponent Component)
-    {
-        ParentComponent = Component;
-    }
-
-}
-
-public class Variables
-{
-    ScriptComponent ParentComponent;
-
-    public Variables(ScriptComponent Component)
-    {
-        ParentComponent = Component;
-    }
-
-}
-]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-</root>]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[main.cs]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
-/* The Script Component allows you to perform virtually any operation that can be accomplished in
- * a .Net application within the context of an Integration Services data flow.
- *
- * Expand the other regions which have "Help" prefixes for examples of specific ways to use
- * Integration Services features within this script component. */
-#endregion
-
-#region Namespaces
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.IO;
-using System.Web.Script.Serialization;
-using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
-using Microsoft.SqlServer.Dts.Runtime.Wrapper;
-using SC_b4e69b73449f40c4927ccb1692a97703.Properties;
-#endregion
-
-/// <summary>
-/// This is the class to which to add your code.  Do not change the name, attributes, or parent
-/// of this class.
-/// </summary>
-[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
-public class ScriptMain : UserComponent
-{
-    #region Help:  Using Integration Services variables and parameters
-    /* To use a variable in this script, first ensure that the variable has been added to
-     * either the list contained in the ReadOnlyVariables property or the list contained in
-     * the ReadWriteVariables property of this script component, according to whether or not your
-     * code needs to write into the variable.  To do so, save this script, close this instance of
-     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
-     * Script Transformation Editor window.
-     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
-     *
-     * Example of reading from a variable or parameter:
-     *  DateTime startTime = Variables.MyStartTime;
-     *
-     * Example of writing to a variable:
-     *  Variables.myStringVariable = "new value";
-     */
-    #endregion
-
-    #region Help:  Using Integration Services Connnection Managers
-    /* Some types of connection managers can be used in this script component.  See the help topic
-     * "Working with Connection Managers Programatically" for details.
-     *
-     * To use a connection manager in this script, first ensure that the connection manager has
-     * been added to either the list of connection managers on the Connection Managers page of the
-     * script component editor.  To add the connection manager, save this script, close this instance of
-     * Visual Studio, and add the Connection Manager to the list.
-     *
-     * If the component needs to hold a connection open while processing rows, override the
-     * AcquireConnections and ReleaseConnections methods.
-     * 
-     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
-     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
-     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
-     *
-     * Example of using a File connection manager to acquire a file path:
-     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
-     *  string filePath = (string)rawConnection;
-     *
-     * Example of releasing a connection manager:
-     *  Connections.SalesDB.ReleaseConnection(rawConnection);
-     */
-    #endregion
-
-    #region Help:  Firing Integration Services Events
-    /* This script component can fire events.
-     *
-     * Example of firing an error event:
-     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
-     *
-     * Example of firing an information event:
-     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
-     *
-     * Example of firing a warning event:
-     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
-     */
-    #endregion
-
-    /// <summary>
-    /// This method is called once, before rows begin to be processed in the data flow.
-    ///
-    /// You can remove this method if you don't need to do anything here.
-    /// </summary>
-    public override void PreExecute()
-    {
-        base.PreExecute();
-        /*
-         * Add your code here
-         */
-    }
-
-    /// <summary>
-    /// This method is called after all the rows have passed through this component.
-    ///
-    /// You can delete this method if you don't need to do anything here.
-    /// </summary>
-    public override void PostExecute()
-    {
-        base.PostExecute();
-        /*
-         * Add your code here
-         */
-    }
-
-    public override void CreateNewOutputRows()
-    {
-        String jsonFileContent = File.ReadAllText("C:\\Users\\mateu\\Desktop\\Studia\\4 semestr\\IDH\\GB_category_id.json");
-        JavaScriptSerializer js = new JavaScriptSerializer();
-        Root root = js.Deserialize<Root>(jsonFileContent);
-        List<Category> list = root.items;
-
-        foreach (Category item in list)
-        {
-            Output0Buffer.AddRow();
-            Output0Buffer.categoryid = int.Parse(item.id);
-            Output0Buffer.name = item.snippet.title;
-        }
-    }
-
-}
-]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
-*  Microsoft SQL Server Integration Services buffer wrappers
-*  This module defines classes for accessing data flow buffers
-*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
-
-
-
-using System;
-using System.Data;
-using Microsoft.SqlServer.Dts.Pipeline;
-using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
-
-public class Output0Buffer: ScriptBuffer
-
-{
-    public Output0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
-        : base(Buffer, BufferColumnIndexes, OutputMap)
-    {
-    }
-
-    public String name
-    {
-        set
-        {
-            this[0] = value;
-        }
-    }
-    public bool name_IsNull
-    {
-        set
-        {
-            if (value)
-            {
-                SetNull(0);
-            }
-            else
-            {
-                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
-            }
-        }
-    }
-
-    public Int32 categoryid
-    {
-        set
-        {
-            this[1] = value;
-        }
-    }
-    public bool categoryid_IsNull
-    {
-        set
-        {
-            if (value)
-            {
-                SetNull(1);
-            }
-            else
-            {
-                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
-            }
-        }
-    }
-
-    new public void AddRow()
-    {
-        base.AddRow();
-    }
-
-    new public void SetEndOfRowset()
-    {
-        base.SetEndOfRowset();
-    }
-
-    new public bool EndOfRowset()
-    {
-        return base.EndOfRowset();
-    }
-
-}
-]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_b4e69b73449f40c4927ccb1692a97703.Properties.Settings.get_Default():SC_b4e69b73449f40c4927ccb1692a97703.Properties.Sett" +
-    "ings")]
-
-namespace SC_b4e69b73449f40c4927ccb1692a97703.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}
-]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[SC_b4e69b73449f40c4927ccb1692a97703.csproj]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{AC14995B-B72F-4BC2-8C7F-00CC39A29F80}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SC_b4e69b73449f40c4927ccb1692a97703</RootNamespace>
-    <AssemblyName>SC_6C2E551E76AC4A7193A38AEA177575E7</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
-    <TargetFrameworkProfile></TargetFrameworkProfile>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>.\bin\Debug\</OutputPath>
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <DebugSymbols>false</DebugSymbols>
-    <Optimize>true</Optimize>
-    <OutputPath>.\bin\Release\</OutputPath>
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.SqlServer.TxScript, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Compile Include="main.cs" />
-    <Compile Include="BufferWrapper.cs" />
-    <Compile Include="ComponentWrapper.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <AppDesigner Include="Properties\" />
-    <Compile Include="Properties\AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <Compile Include="Properties\Category.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <!-- Include the build rules for a C# project.-->
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
-  <ProjectExtensions>
-    <VisualStudio>
-      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
-        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" />
-        <Host Name="ScriptComponent" IconIndex="0" />
-        <ProjectClient>
-          <HostIdentifier>SSIS_SC160</HostIdentifier>
-        </ProjectClient>
-      </FlavorProperties>
-    </VisualStudio>
-  </ProjectExtensions>
-</Project>]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[Project]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
-  <msb:PropertyGroup>
-    <msb:CodeName>SC_b4e69b73449f40c4927ccb1692a97703</msb:CodeName>
-    <msb:Language>msBuild</msb:Language>
-    <msb:DisplayName>SC_b4e69b73449f40c4927ccb1692a97703</msb:DisplayName>
-    <msb:ProjectId>{7752D972-7489-4CFA-9588-F309BA8E9D09}</msb:ProjectId>
-  </msb:PropertyGroup>
-  <msb:ItemGroup>
-    <msb:Project Include="SC_b4e69b73449f40c4927ccb1692a97703.csproj" />
-    <msb:File Include="Properties\Resources.resx" />
-    <msb:File Include="main.cs" />
-    <msb:File Include="BufferWrapper.cs" />
-    <msb:File Include="ComponentWrapper.cs" />
-    <msb:File Include="Properties\Category.cs" />
-    <msb:File Include="Properties\AssemblyInfo.cs" />
-    <msb:File Include="Properties\Resources.Designer.cs" />
-    <msb:File Include="Properties\Settings.settings" />
-    <msb:File Include="Properties\Settings.Designer.cs" />
-  </msb:ItemGroup>
-</c:Project>]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("SC_b4e69b73449f40c4927ccb1692a97703")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SC_b4e69b73449f40c4927ccb1692a97703")]
-[assembly: AssemblyCopyright("Copyright @  2024")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.0.0")]
-]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[Properties\Category.cs]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SC_b4e69b73449f40c4927ccb1692a97703.Properties
-{
-    internal class Root
-    {
-        public List<Category> items { get; set; }
-    }
-
-    internal class Category
-    {
-        public string id { get; set; }
-        public Snippet snippet { get; set; }
-    }
-
-    internal class Snippet
-    {
-        public string title { get; set; }
-    }
-
-}
-]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_b4e69b73449f40c4927ccb1692a97703.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
-    "rceManager")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_b4e69b73449f40c4927ccb1692a97703.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
-    "fo")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_b4e69b73449f40c4927ccb1692a97703.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
-    "):Void")]
-
-namespace SC_b4e69b73449f40c4927ccb1692a97703.Properties {
-    
-    
-    /// <summary>
-    ///   A strongly-typed resource class, for looking up localized strings, etc.
-    /// </summary>
-    // This class was auto-generated by the StronglyTypedResourceBuilder
-    // class via a tool like ResGen or Visual Studio.
-    // To add or remove a member, edit your .ResX file then rerun ResGen
-    // with the /str option, or rebuild your VS project.
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class Resources {
-        
-        private static global::System.Resources.ResourceManager resourceMan;
-        
-        private static global::System.Globalization.CultureInfo resourceCulture;
-        
-        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
-        }
-        
-        /// <summary>
-        ///   Returns the cached ResourceManager instance used by this class.
-        /// </summary>
-        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
-            get {
-                if ((resourceMan == null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_b4e69b73449f40c4927ccb1692a97703.Properties.Resources", typeof(Resources).Assembly);
-                    resourceMan = temp;
-                }
-                return resourceMan;
-            }
-        }
-        
-        /// <summary>
-        ///   Overrides the current thread's CurrentUICulture property for all
-        ///   resource lookups using this strongly typed resource class.
-        /// </summary>
-        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
-            get {
-                return resourceCulture;
-            }
-            set {
-                resourceCulture = value;
-            }
-        }
-    }
-}
-]]></arrayElement>
-                  </arrayElements>
-                </property>
-                <property
-                  dataType="System.String"
-                  description="Stores the binary representation of the component"
-                  isArray="true"
-                  name="BinaryCode"
-                  state="cdata">
-                  <arrayElements
-                    arrayElementCount="2">
-                    <arrayElement
-                      dataType="System.String"><![CDATA[SC_6C2E551E76AC4A7193A38AEA177575E7.dll]]></arrayElement>
-                    <arrayElement
-                      dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAIoxJGYAAAAAAAAAAOAAIiALATAAABgAAAAIAAAAAAAARjcA
-AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
-ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAPQ2AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
-AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAATBcAAAAgAAAAGAAAAAIA
-AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAaAAAAAAAAAAAAAAAAAABAAABA
-LnJlbG9jAAAMAAAAAGAAAAACAAAAIAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAo
-NwAAAAAAAEgAAAACAAUAwCIAAHwTAAABAAAAAAAAADw2AAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACiobMAIAfAAAAAEAABFyAQAAcCgS
-AAAKCnMTAAAKBm8BAAArbxQAAAZvFQAACgsrPxIBKBYAAAoMAnsDAAAEbwoAAAYCewMAAAQIbxcA
-AAYoFwAACm8IAAAGAnsDAAAECG8ZAAAGbxwAAAZvBgAABhIBKBgAAAotuN4OEgH+FgIAABtvGQAA
-CtwqARAAAAIAIQBMbQAOAAAAAB4CKA0AAAYqKgIDBAUoGgAACiomAhYDKBsAAAoqWgMsCAIWKBwA
-AAoqcoEAAHBzHQAACno6AhcDjB4AAAEoGwAACipaAywIAhcoHAAACipygQAAcHMdAAAKeh4CKB4A
-AAoqHgIoHwAACioeAiggAAAKKn4CKCEAAAoCAnMSAAAGfQEAAAQCAnMTAAAGfQIAAAQqBipuAnsD
-AAAELBICewMAAARvCwAABgIUfQMAAAQqEzAFAEkAAAACAAARFgorLgQGlA4Ech4BAHAoIgAACjMZ
-AgUGmgIEBpQoIwAACg4EcwUAAAZ9AwAABAYXWAoGAzLOAm8RAAAGAm8OAAAGAigPAAAGKjoCKCQA
-AAoCA30EAAAEKjoCKCQAAAoCA30FAAAEKh4CewYAAAQqIgIDfQYAAAQqHgIoJAAACioeAnsHAAAE
-KiICA30HAAAEKh4CewgAAAQqIgIDfQgAAAQqHgJ7CQAABCoiAgN9CQAABCqufgoAAAQtHnIwAQBw
-0AoAAAIoJQAACm8mAAAKcycAAAqACgAABH4KAAAEKhp+CwAABCoeAoALAAAEKhp+DAAABCoeAigo
-AAAKKi5zJAAABoAMAAAEKgAAAEJTSkIBAAEAAAAAAAwAAAB2NC4wLjMwMzE5AAAAAAUAbAAAAHQH
-AAAjfgAA4AcAAMwHAAAjU3RyaW5ncwAAAACsDwAApAEAACNVUwBQEQAAEAAAACNHVUlEAAAAYBEA
-ABwCAAAjQmxvYgAAAAAAAAACAAABVxWiCQkJAAAA+gEzABYAAAEAAAAjAAAACwAAAAwAAAAlAAAA
-EgAAACgAAAAcAAAAAgAAAAYAAAALAAAAEAAAAAIAAAABAAAABQAAAAEAAAABAAAAAADjAwEAAAAA
-AAYA2AKFBQYAbAOFBQYAJAJyBQ8A+QUAAAYAUQKqBAYAuwKqBAYAnAKqBAYAUwOqBAYA+AKqBAYA
-EQOqBAYAaAKqBAYAgwKzAwoALANjAQYAAQBaADsAUAUAAAoAFwVjAQ4ACAVjAQoA4gRjAQoALwdj
-AQYAzwZCBAYA7AGFBQYABwJyBQYAKAWlBQYA1gR1BBIA1wHNAxIAOALNAxIAsQFgBAYAQQFHABYA
-OAWKBAYACABCBAYAEQFCBAYAvARCBAYAhAFCBAYAHQFCBAYAugeqBAAAAAAyAAAAAAABAAEAAQAQ
-AFUEAAAQAAEAAQABABAA+gQAAEEAAQAFAAEAEAARBwAATQABAA0AAQAQAJkGAABRAAQAEgABABAA
-NwYAAFEABQATAAAAEABLBwgGUQAGABQAAAAQAMMHCAZRAAcAFwAAABAA1gYIBlEACQAcAAAAEACs
-BQgGUQAKAB8AAAEQAGYGCAZtAAwAIwAGAJkGsAAGADcGtAAGAPoEuAABAB8HvAABAB8HvAABANEA
-wAABAKYAyAABAOgAywABALoAyAARAEkEzwARAKEB0wARAAEB1wBQIAAAAADGAIoDBgABAFggAAAA
-AMYAlQMGAAEAYCAAAAAAxgC7BgYAAQD4IAAAAACGGFsFBgABAAAhAAAAAIYYWwVdAAEACyEAAAAA
-hghaARAABAAVIQAAAACGCCEE2wAFACwhAAAAAIYIlwABAAYAOyEAAAAAhggLBNsABwBSIQAAAACG
-AK8HBgAIAFohAAAAAIYA9gYGAAgAYiEAAAAAhgD5BlkACABqIQAAAACGGFsFBgAIAIohAAAAAMYB
-rQYGAAgAjCEAAAAAgQB1AAYACACoIQAAAADGAI4H4AAIAIohAAAAAMYBuwYGAAwA/SEAAAAAhhhb
-BewADAAMIgAAAACGGFsF7AANABsiAAAAAIYIbwbyAA4AIyIAAAAAhgh5BvsADgAsIgAAAACGGFsF
-BgAPADQiAAAAAIYIiQAFAQ8APCIAAAAAhgiQABAADwBFIgAAAACGCN4GCQEQAE0iAAAAAIYI6gYO
-ARAALCIAAAAAhhhbBQYAEQBWIgAAAACGCEYBBQERAF4iAAAAAIYIUAEQABEALCIAAAAAhhhbBQYA
-EgAsIgAAAACDGFsFBgASAGciAAAAAJMIJAUUARIAkyIAAAAAkwiJARkBEgCaIgAAAACTCJUBHgES
-AKIiAAAAAJYIBQckARMAqSIAAAAAhhhbBQYAEwCxIgAAAACRGGEFKQETAAAAAQAdBQAAAgBBBgAA
-AwDwBAAAAQChAwAAAQChAwAAAQChAwAAAQChAwAAAQCzBgAAAgBoBQAAAwClBgAABADwBAAAAQA1
-BwAAAQA1BwAAAQChAwAAAQChAwAAAQChAwAAAQChAwAAAQChAwkAWwUBABEAWwUGABkAWwUKACkA
-WwUQADEAWwUQADkAWwUQAEEAWwUQAEkAWwUQAFEAWwUQAFkAWwUQAGEAWwUQAGkAWwUGAKkAWwUG
-ALEAWwUGANEAWwUVAJkAigMGAJkAlQMGAOEAowcnAOkAWwUGAOkApwMsAAwATQU/ABQAPwdPAPEA
-0QFUABQAmgdZAPkAyQEGAIEAWwVdAIEAOQRnAIEAMQQBAAEBWwUQAIEArwcGAIEA9gYGAIEA+QZZ
-AJkAWwUGAJkAOwBxAJkAVQZ4AKEAWwUGAAkBLwF+AAkBtgeHALkAWwWNANkAWwUGAC4ACwBWAS4A
-EwBfAS4AGwB+AS4AIwCHAS4AKwCwAS4AMwCwAS4AOwCwAS4AQwCHAS4ASwC2AS4AUwCwAS4AWwDN
-AUMAYwAXAsEAawAXAuEAawAXAgEBawAXAiEBawAXAikBewB+AUMBcwAXAkkBewB+AYEBawAXAoAC
-awAXAqACawAXAuACawAXAgADawAXAiADawAXAkADawAXAoADawAXAqADawAXAhsAbQADAAEABwAF
-AAgABgAJAAgACgAJAAsACwAAAF4BLQEAACUEMQEAAJsANQEAAA8EMQEAAH0GOQEAAKMALQEAAO4G
-QgEAAFQBLQEAACgFRwEAAKkBTAEAAAkHUQEBAAYAAwABAAcABQABAAgABwABAAkACQACABQACwAB
-ABUACwACABcADQABABgADQACABkADwABABoADwACABwAEQABAB0AEQACACAAEwACACEAFQABACIA
-FQACACMAFwA4AEgABIAAAAEAAAAAAAAAAAAAAAAADgAAAAQAAAAAAAAAAAAAAJUAUQAAAAAAEAAA
-AAAAAAAAAAAAngBQBwAAAAAQAAAAAAAAAAAAAACeAG0HAAAAAAQAAAAAAAAAAAAAAJUAQgQAAAAA
-BAAAAAAAAAAAAAAApwCDBgAAAAAAAAAAAQAAALYFAAApADMAAAAAAABMaXN0YDEASW50MzIAU0Nf
-NkMyRTU1MUU3NkFDNEE3MTkzQTM4QUVBMTc3NTc1RTcAPE1vZHVsZT4AR2V0T3V0cHV0SUQAU3lz
-dGVtLklPAG1zY29ybGliAFN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljAE1hcmtPdXRwdXRzRmlu
-aXNoZWQAZ2V0X2lkAHNldF9pZABzZXRfY2F0ZWdvcnlpZAA8aWQ+a19fQmFja2luZ0ZpZWxkADx0
-aXRsZT5rX19CYWNraW5nRmllbGQAPGl0ZW1zPmtfX0JhY2tpbmdGaWVsZAA8c25pcHBldD5rX19C
-YWNraW5nRmllbGQAZGVmYXVsdEluc3RhbmNlAElEaXNwb3NhYmxlAFJ1bnRpbWVUeXBlSGFuZGxl
-AEdldFR5cGVGcm9tSGFuZGxlAEZpbGUAZ2V0X3RpdGxlAHNldF90aXRsZQBzZXRfbmFtZQBNaWNy
-b3NvZnQuU3FsU2VydmVyLkR0cy5QaXBlbGluZQBUeXBlAGdldF9DdWx0dXJlAHNldF9DdWx0dXJl
-AHJlc291cmNlQ3VsdHVyZQBBcHBsaWNhdGlvblNldHRpbmdzQmFzZQBEaXNwb3NlAFBhcnNlAEVk
-aXRvckJyb3dzYWJsZVN0YXRlAENvbXBpbGVyR2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9u
-VXNlckNvZGVBdHRyaWJ1dGUARGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRy
-aWJ1dGUAQXNzZW1ibHlUaXRsZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBU
-YXJnZXRGcmFtZXdvcmtBdHRyaWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFz
-c2VtYmx5RGVzY3JpcHRpb25BdHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0
-ZQBBc3NlbWJseVByb2R1Y3RBdHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJ
-U1NjcmlwdENvbXBvbmVudEVudHJ5UG9pbnRBdHRyaWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0cmli
-dXRlAFJ1bnRpbWVDb21wYXRpYmlsaXR5QXR0cmlidXRlAFByZUV4ZWN1dGUAUG9zdEV4ZWN1dGUA
-dmFsdWUARGVzZXJpYWxpemUAU3lzdGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBTeXN0ZW0uQ29tcG9u
-ZW50TW9kZWwAU0NfNkMyRTU1MUU3NkFDNEE3MTkzQTM4QUVBMTc3NTc1RTcuZGxsAHNldF9jYXRl
-Z29yeWlkX0lzTnVsbABzZXRfbmFtZV9Jc051bGwAU2V0TnVsbABzZXRfSXRlbQBTeXN0ZW0AcmVz
-b3VyY2VNYW4AU2NyaXB0TWFpbgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0ZW0uR2xvYmFsaXph
-dGlvbgBTeXN0ZW0uV2ViLlNjcmlwdC5TZXJpYWxpemF0aW9uAFN5c3RlbS5SZWZsZWN0aW9uAElu
-dmFsaWRPcGVyYXRpb25FeGNlcHRpb24AQ3VsdHVyZUluZm8AT3V0cHV0TmFtZU1hcABPdXRwdXRN
-YXAAT3V0cHV0MEJ1ZmZlcgBQaXBlbGluZUJ1ZmZlcgBTY3JpcHRCdWZmZXIAZ2V0X1Jlc291cmNl
-TWFuYWdlcgBKYXZhU2NyaXB0U2VyaWFsaXplcgBHZXRFbnVtZXJhdG9yAC5jdG9yAC5jY3RvcgBP
-dXRwdXRJRHMAU3lzdGVtLkRpYWdub3N0aWNzAFN5c3RlbS5SdW50aW1lLkNvbXBpbGVyU2Vydmlj
-ZXMAU3lzdGVtLlJlc291cmNlcwBTQ19iNGU2OWI3MzQ0OWY0MGM0OTI3Y2NiMTY5MmE5NzcwMy5Q
-cm9wZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMAU0NfYjRlNjliNzM0
-NDlmNDBjNDkyN2NjYjE2OTJhOTc3MDMuUHJvcGVydGllcwBWYXJpYWJsZXMAQnVmZmVyQ29sdW1u
-SW5kZXhlcwBHZXRDb2x1bW5JbmRleGVzAFNldHRpbmdzAGdldF9pdGVtcwBzZXRfaXRlbXMAU3lz
-dGVtLldlYi5FeHRlbnNpb25zAENvbm5lY3Rpb25zAEJ1ZmZlcnMARmluaXNoT3V0cHV0cwBDcmVh
-dGVOZXdPdXRwdXRSb3dzAE9iamVjdABTbmlwcGV0AGdldF9zbmlwcGV0AHNldF9zbmlwcGV0AFNl
-dEVuZE9mUm93c2V0AGdldF9EZWZhdWx0AFVzZXJDb21wb25lbnQAUGFyZW50Q29tcG9uZW50AFNj
-cmlwdENvbXBvbmVudABnZXRfQ3VycmVudABSb290AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3Jp
-cHQATWljcm9zb2Z0LlNxbFNlcnZlci5QaXBlbGluZUhvc3QAUHJpbWVPdXRwdXQATW92ZU5leHQA
-UmVhZEFsbFRleHQAQWRkUm93AGdldF9Bc3NlbWJseQBDYXRlZ29yeQAAf0MAOgBcAFUAcwBlAHIA
-cwBcAG0AYQB0AGUAdQBcAEQAZQBzAGsAdABvAHAAXABTAHQAdQBkAGkAYQBcADQAIABzAGUAbQBl
-AHMAdAByAFwASQBEAEgAXABHAEIAXwBjAGEAdABlAGcAbwByAHkAXwBpAGQALgBqAHMAbwBuAACA
-m0kAcwBOAHUAbABsACAAcAByAG8AcABlAHIAdAB5ACAAYwBhAG4AbgBvAHQAIABiAGUAIABzAGUA
-dAAgAHQAbwAgAEYAYQBsAHMAZQAuACAAQQBzAHMAaQBnAG4AIABhACAAdgBhAGwAdQBlACAAdABv
-ACAAdABoAGUAIABjAG8AbAB1AG0AbgAgAGkAbgBzAHQAZQBhAGQALgAAEU8AdQB0AHAAdQB0ACAA
-MAAAcVMAQwBfAGIANABlADYAOQBiADcAMwA0ADQAOQBmADQAMABjADQAOQAyADcAYwBjAGIAMQA2
-ADkAMgBhADkANwA3ADAAMwAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUA
-cwAAAAB9xSzptLrGQ5V7Md91j3DWAAQgAQEIAyAAAQUgAQEREQQgAQEOBSABARFlCwcDDhURPQES
-IBIgBAABDg4GMAEBHgAOBAoBEhwGFRI5ARIgCCAAFRE9ARMABhURPQESIAQgABMABAABCA4DIAAC
-CSADARJFHQgSSQUgAgEIHAMHAQgGAAIIEkkOBSABHQgICAABEoCFEYCJBSAAEoCNByACAQ4SgI0I
-t3pcVhk04IkIiYRdzYCAzJEIMb84Vq02TjUDBhIUAwYSGAMGEgwDBhJNBwYVEjkBEiACBg4DBhIk
-AwYSXQMGEmEDBhIsBCABAQILIAQBCB0IHRJFEkkFIAEBEk0IIAAVEjkBEiAJIAEBFRI5ARIgAyAA
-DgQgABIkBSABARIkBAAAEl0EAAASYQUAAQESYQQAABIsAwAAAQMoAA4DKAACAygACAgoABUSOQES
-IAQoABIkBAgAEl0ECAASYQQIABIsCAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhy
-b3dzAQgBAAIAAAAAACgBACNTQ19iNGU2OWI3MzQ0OWY0MGM0OTI3Y2NiMTY5MmE5NzcwMwAABQEA
-AAAAFgEAEUNvcHlyaWdodCBAICAyMDI0AABJAQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjcB
-AFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEi5ORVQgRnJhbWV3b3JrIDQuNwQBAAAAtAAAAM7K774B
-AAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2VzLlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lv
-bj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUw
-ODkjU3lzdGVtLlJlc291cmNlcy5SdW50aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQ
-tAAAABw3AAAAAAAAAAAAADY3AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoNwAAAAAAAAAAAAAA
-AF9Db3JEbGxNYWluAG1zY29yZWUuZGxsAAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAEAEAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgA
-AABYQAAA7AMAAAAAAAAAAAAA7AM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAA
-AL0E7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAA
-AQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8AbgAA
-AAAAAACwBEwDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAACgDAAABADAAMAAwADAA
-MAA0AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEAbgB5
-AE4AYQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAA
-UwBDAF8AYgA0AGUANgA5AGIANwAzADQANAA5AGYANAAwAGMANAA5ADIANwBjAGMAYgAxADYAOQAy
-AGEAOQA3ADcAMAAzAAAAMAAIAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADAA
-LgAwAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwA2AEMAMgBFADUANQAx
-AEUANwA2AEEAQwA0AEEANwAxADkAMwBBADMAOABBAEUAQQAxADcANwA1ADcANQBFADcALgBkAGwA
-bAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcAaAB0
-ACAAQAAgACAAMgAwADIANAAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBzAAAA
-AAAAAAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAFMAQwBfADYAQwAy
-AEUANQA1ADEARQA3ADYAQQBDADQAQQA3ADEAOQAzAEEAMwA4AEEARQBBADEANwA3ADUANwA1AEUA
-NwAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABTAEMAXwBiADQAZQA2
-ADkAYgA3ADMANAA0ADkAZgA0ADAAYwA0ADkAMgA3AGMAYwBiADEANgA5ADIAYQA5ADcANwAwADMA
-AAA0AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAOAAI
-AAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAAEg3AAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
-                  </arrayElements>
-                </property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
-                  name="VSTAProjectName"
-                  typeConverter="NOTBROWSABLE">SC_6c2e551e76ac4a7193a38aea177575e7</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the programming language used by the script."
-                  name="ScriptLanguage"
-                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies a comma-separated list of read-only variables."
-                  name="ReadOnlyVariables"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
-                <property
-                  dataType="System.String"
-                  description="Specifies a comma-separated list of read/write variables."
-                  name="ReadWriteVariables"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
-                <property
-                  dataType="System.String"
-                  description="List of breakpoints present on the script."
-                  isArray="true"
-                  name="BreakpointCollection"
-                  typeConverter="NOTBROWSABLE">
-                  <arrayElements
-                    arrayElementCount="0" />
-                </property>
-                <property
-                  dataType="System.String"
-                  description="Checksum to match component metedata against compiled codes."
-                  name="MetadataChecksum140"
-                  typeConverter="NOTBROWSABLE">44</property>
-                <property
-                  dataType="System.String"
-                  name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
-              </properties>
-              <outputs>
-                <output
-                  refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component 1.Outputs[Output 0]"
-                  hasSideEffects="true"
-                  name="Output 0">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component 1.Outputs[Output 0].Columns[name]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component 1.Outputs[Output 0].Columns[name]"
-                      name="name" />
-                    <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component 1.Outputs[Output 0].Columns[category_id]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component 1.Outputs[Output 0].Columns[category_id]"
-                      name="category_id" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -5821,6 +4848,979 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               </outputs>
             </component>
             <component
+              refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component JSON Categories Load"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;13"
+              description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+              name="Script Component JSON Categories Load"
+              version="13">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Stores the source code of the component"
+                  isArray="true"
+                  name="SourceCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="33">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public Output0Buffer Output0Buffer;
+
+    public virtual void FinishOutputs()
+    {
+    }
+
+    private void MarkOutputsFinished()
+    {
+
+        if (null != Output0Buffer)
+        {
+            Output0Buffer.SetEndOfRowset();
+            Output0Buffer = null;
+        }
+
+    }
+
+    public override void PrimeOutput(int Outputs, int[] OutputIDs, PipelineBuffer[] Buffers, OutputNameMap OutputMap)
+    {
+       for(int Idx = 0; Idx < Outputs; Idx++)
+       {
+            if(OutputIDs[Idx] == GetOutputID(OutputMap, @"Output 0"))
+            {
+                Output0Buffer = new Output0Buffer(Buffers[Idx], GetColumnIndexes(OutputIDs[Idx]), OutputMap);
+            }
+        }
+
+        CreateNewOutputRows();
+
+        FinishOutputs();
+        MarkOutputsFinished();
+
+    }
+
+    public virtual void CreateNewOutputRows()
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
+/* The Script Component allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services data flow.
+ *
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script component. */
+#endregion
+
+#region Namespaces
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.IO;
+using System.Web.Script.Serialization;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+using SC_b4e69b73449f40c4927ccb1692a97703.Properties;
+#endregion
+
+/// <summary>
+/// This is the class to which to add your code.  Do not change the name, attributes, or parent
+/// of this class.
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    #region Help:  Using Integration Services variables and parameters
+    /* To use a variable in this script, first ensure that the variable has been added to
+     * either the list contained in the ReadOnlyVariables property or the list contained in
+     * the ReadWriteVariables property of this script component, according to whether or not your
+     * code needs to write into the variable.  To do so, save this script, close this instance of
+     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
+     * Script Transformation Editor window.
+     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+     *
+     * Example of reading from a variable or parameter:
+     *  DateTime startTime = Variables.MyStartTime;
+     *
+     * Example of writing to a variable:
+     *  Variables.myStringVariable = "new value";
+     */
+    #endregion
+
+    #region Help:  Using Integration Services Connnection Managers
+    /* Some types of connection managers can be used in this script component.  See the help topic
+     * "Working with Connection Managers Programatically" for details.
+     *
+     * To use a connection manager in this script, first ensure that the connection manager has
+     * been added to either the list of connection managers on the Connection Managers page of the
+     * script component editor.  To add the connection manager, save this script, close this instance of
+     * Visual Studio, and add the Connection Manager to the list.
+     *
+     * If the component needs to hold a connection open while processing rows, override the
+     * AcquireConnections and ReleaseConnections methods.
+     * 
+     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
+     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
+     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
+     *
+     * Example of using a File connection manager to acquire a file path:
+     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
+     *  string filePath = (string)rawConnection;
+     *
+     * Example of releasing a connection manager:
+     *  Connections.SalesDB.ReleaseConnection(rawConnection);
+     */
+    #endregion
+
+    #region Help:  Firing Integration Services Events
+    /* This script component can fire events.
+     *
+     * Example of firing an error event:
+     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
+     *
+     * Example of firing an information event:
+     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
+     *
+     * Example of firing a warning event:
+     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
+     */
+    #endregion
+
+    /// <summary>
+    /// This method is called once, before rows begin to be processed in the data flow.
+    ///
+    /// You can remove this method if you don't need to do anything here.
+    /// </summary>
+    public override void PreExecute()
+    {
+        base.PreExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called after all the rows have passed through this component.
+    ///
+    /// You can delete this method if you don't need to do anything here.
+    /// </summary>
+    public override void PostExecute()
+    {
+        base.PostExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    public override void CreateNewOutputRows()
+    {
+        String jsonFileContent = File.ReadAllText("C:\\Users\\mateu\\Desktop\\Studia\\4 semestr\\IDH\\GB_category_id.json");
+        JavaScriptSerializer js = new JavaScriptSerializer();
+        Root root = js.Deserialize<Root>(jsonFileContent);
+        List<Category> list = root.items;
+
+        foreach (Category item in list)
+        {
+            Output0Buffer.AddRow();
+            Output0Buffer.categoryid = int.Parse(item.id);
+            Output0Buffer.name = item.snippet.title;
+        }
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class Output0Buffer: ScriptBuffer
+
+{
+    public Output0Buffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public String name
+    {
+        set
+        {
+            this[0] = value;
+        }
+    }
+    public bool name_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(0);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Int32 categoryid
+    {
+        set
+        {
+            this[1] = value;
+        }
+    }
+    public bool categoryid_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(1);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public void AddRow()
+    {
+        base.AddRow();
+    }
+
+    new public void SetEndOfRowset()
+    {
+        base.SetEndOfRowset();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_b4e69b73449f40c4927ccb1692a97703.Properties.Settings.get_Default():SC_b4e69b73449f40c4927ccb1692a97703.Properties.Sett" +
+    "ings")]
+
+namespace SC_b4e69b73449f40c4927ccb1692a97703.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_b4e69b73449f40c4927ccb1692a97703.csproj]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC14995B-B72F-4BC2-8C7F-00CC39A29F80}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SC_b4e69b73449f40c4927ccb1692a97703</RootNamespace>
+    <AssemblyName>SC_6C2E551E76AC4A7193A38AEA177575E7</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.TxScript, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Compile Include="main.cs" />
+    <Compile Include="BufferWrapper.cs" />
+    <Compile Include="ComponentWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Category.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- This section defines VSTA properties that describe the host-changable project properties. -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" />
+        <Host Name="ScriptComponent" IconIndex="0" />
+        <ProjectClient>
+          <HostIdentifier>SSIS_SC160</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Project]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>SC_b4e69b73449f40c4927ccb1692a97703</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>SC_b4e69b73449f40c4927ccb1692a97703</msb:DisplayName>
+    <msb:ProjectId>{7752D972-7489-4CFA-9588-F309BA8E9D09}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="SC_b4e69b73449f40c4927ccb1692a97703.csproj" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
+    <msb:File Include="Properties\Category.cs" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_b4e69b73449f40c4927ccb1692a97703")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_b4e69b73449f40c4927ccb1692a97703")]
+[assembly: AssemblyCopyright("Copyright @  2024")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Category.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SC_b4e69b73449f40c4927ccb1692a97703.Properties
+{
+    internal class Root
+    {
+        public List<Category> items { get; set; }
+    }
+
+    internal class Category
+    {
+        public string id { get; set; }
+        public Snippet snippet { get; set; }
+    }
+
+    internal class Snippet
+    {
+        public string title { get; set; }
+    }
+
+}
+]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_b4e69b73449f40c4927ccb1692a97703.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_b4e69b73449f40c4927ccb1692a97703.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_b4e69b73449f40c4927ccb1692a97703.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_b4e69b73449f40c4927ccb1692a97703.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_b4e69b73449f40c4927ccb1692a97703.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Stores the binary representation of the component"
+                  isArray="true"
+                  name="BinaryCode"
+                  state="cdata">
+                  <arrayElements
+                    arrayElementCount="2">
+                    <arrayElement
+                      dataType="System.String"><![CDATA[SC_6C2E551E76AC4A7193A38AEA177575E7.dll]]></arrayElement>
+                    <arrayElement
+                      dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAIoxJGYAAAAAAAAAAOAAIiALATAAABgAAAAIAAAAAAAARjcA
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAPQ2AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAATBcAAAAgAAAAGAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAaAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAIAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAo
+NwAAAAAAAEgAAAACAAUAwCIAAHwTAAABAAAAAAAAADw2AAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACiobMAIAfAAAAAEAABFyAQAAcCgS
+AAAKCnMTAAAKBm8BAAArbxQAAAZvFQAACgsrPxIBKBYAAAoMAnsDAAAEbwoAAAYCewMAAAQIbxcA
+AAYoFwAACm8IAAAGAnsDAAAECG8ZAAAGbxwAAAZvBgAABhIBKBgAAAotuN4OEgH+FgIAABtvGQAA
+CtwqARAAAAIAIQBMbQAOAAAAAB4CKA0AAAYqKgIDBAUoGgAACiomAhYDKBsAAAoqWgMsCAIWKBwA
+AAoqcoEAAHBzHQAACno6AhcDjB4AAAEoGwAACipaAywIAhcoHAAACipygQAAcHMdAAAKeh4CKB4A
+AAoqHgIoHwAACioeAiggAAAKKn4CKCEAAAoCAnMSAAAGfQEAAAQCAnMTAAAGfQIAAAQqBipuAnsD
+AAAELBICewMAAARvCwAABgIUfQMAAAQqEzAFAEkAAAACAAARFgorLgQGlA4Ech4BAHAoIgAACjMZ
+AgUGmgIEBpQoIwAACg4EcwUAAAZ9AwAABAYXWAoGAzLOAm8RAAAGAm8OAAAGAigPAAAGKjoCKCQA
+AAoCA30EAAAEKjoCKCQAAAoCA30FAAAEKh4CewYAAAQqIgIDfQYAAAQqHgIoJAAACioeAnsHAAAE
+KiICA30HAAAEKh4CewgAAAQqIgIDfQgAAAQqHgJ7CQAABCoiAgN9CQAABCqufgoAAAQtHnIwAQBw
+0AoAAAIoJQAACm8mAAAKcycAAAqACgAABH4KAAAEKhp+CwAABCoeAoALAAAEKhp+DAAABCoeAigo
+AAAKKi5zJAAABoAMAAAEKgAAAEJTSkIBAAEAAAAAAAwAAAB2NC4wLjMwMzE5AAAAAAUAbAAAAHQH
+AAAjfgAA4AcAAMwHAAAjU3RyaW5ncwAAAACsDwAApAEAACNVUwBQEQAAEAAAACNHVUlEAAAAYBEA
+ABwCAAAjQmxvYgAAAAAAAAACAAABVxWiCQkJAAAA+gEzABYAAAEAAAAjAAAACwAAAAwAAAAlAAAA
+EgAAACgAAAAcAAAAAgAAAAYAAAALAAAAEAAAAAIAAAABAAAABQAAAAEAAAABAAAAAADjAwEAAAAA
+AAYA2AKFBQYAbAOFBQYAJAJyBQ8A+QUAAAYAUQKqBAYAuwKqBAYAnAKqBAYAUwOqBAYA+AKqBAYA
+EQOqBAYAaAKqBAYAgwKzAwoALANjAQYAAQBaADsAUAUAAAoAFwVjAQ4ACAVjAQoA4gRjAQoALwdj
+AQYAzwZCBAYA7AGFBQYABwJyBQYAKAWlBQYA1gR1BBIA1wHNAxIAOALNAxIAsQFgBAYAQQFHABYA
+OAWKBAYACABCBAYAEQFCBAYAvARCBAYAhAFCBAYAHQFCBAYAugeqBAAAAAAyAAAAAAABAAEAAQAQ
+AFUEAAAQAAEAAQABABAA+gQAAEEAAQAFAAEAEAARBwAATQABAA0AAQAQAJkGAABRAAQAEgABABAA
+NwYAAFEABQATAAAAEABLBwgGUQAGABQAAAAQAMMHCAZRAAcAFwAAABAA1gYIBlEACQAcAAAAEACs
+BQgGUQAKAB8AAAEQAGYGCAZtAAwAIwAGAJkGsAAGADcGtAAGAPoEuAABAB8HvAABAB8HvAABANEA
+wAABAKYAyAABAOgAywABALoAyAARAEkEzwARAKEB0wARAAEB1wBQIAAAAADGAIoDBgABAFggAAAA
+AMYAlQMGAAEAYCAAAAAAxgC7BgYAAQD4IAAAAACGGFsFBgABAAAhAAAAAIYYWwVdAAEACyEAAAAA
+hghaARAABAAVIQAAAACGCCEE2wAFACwhAAAAAIYIlwABAAYAOyEAAAAAhggLBNsABwBSIQAAAACG
+AK8HBgAIAFohAAAAAIYA9gYGAAgAYiEAAAAAhgD5BlkACABqIQAAAACGGFsFBgAIAIohAAAAAMYB
+rQYGAAgAjCEAAAAAgQB1AAYACACoIQAAAADGAI4H4AAIAIohAAAAAMYBuwYGAAwA/SEAAAAAhhhb
+BewADAAMIgAAAACGGFsF7AANABsiAAAAAIYIbwbyAA4AIyIAAAAAhgh5BvsADgAsIgAAAACGGFsF
+BgAPADQiAAAAAIYIiQAFAQ8APCIAAAAAhgiQABAADwBFIgAAAACGCN4GCQEQAE0iAAAAAIYI6gYO
+ARAALCIAAAAAhhhbBQYAEQBWIgAAAACGCEYBBQERAF4iAAAAAIYIUAEQABEALCIAAAAAhhhbBQYA
+EgAsIgAAAACDGFsFBgASAGciAAAAAJMIJAUUARIAkyIAAAAAkwiJARkBEgCaIgAAAACTCJUBHgES
+AKIiAAAAAJYIBQckARMAqSIAAAAAhhhbBQYAEwCxIgAAAACRGGEFKQETAAAAAQAdBQAAAgBBBgAA
+AwDwBAAAAQChAwAAAQChAwAAAQChAwAAAQChAwAAAQCzBgAAAgBoBQAAAwClBgAABADwBAAAAQA1
+BwAAAQA1BwAAAQChAwAAAQChAwAAAQChAwAAAQChAwAAAQChAwkAWwUBABEAWwUGABkAWwUKACkA
+WwUQADEAWwUQADkAWwUQAEEAWwUQAEkAWwUQAFEAWwUQAFkAWwUQAGEAWwUQAGkAWwUGAKkAWwUG
+ALEAWwUGANEAWwUVAJkAigMGAJkAlQMGAOEAowcnAOkAWwUGAOkApwMsAAwATQU/ABQAPwdPAPEA
+0QFUABQAmgdZAPkAyQEGAIEAWwVdAIEAOQRnAIEAMQQBAAEBWwUQAIEArwcGAIEA9gYGAIEA+QZZ
+AJkAWwUGAJkAOwBxAJkAVQZ4AKEAWwUGAAkBLwF+AAkBtgeHALkAWwWNANkAWwUGAC4ACwBWAS4A
+EwBfAS4AGwB+AS4AIwCHAS4AKwCwAS4AMwCwAS4AOwCwAS4AQwCHAS4ASwC2AS4AUwCwAS4AWwDN
+AUMAYwAXAsEAawAXAuEAawAXAgEBawAXAiEBawAXAikBewB+AUMBcwAXAkkBewB+AYEBawAXAoAC
+awAXAqACawAXAuACawAXAgADawAXAiADawAXAkADawAXAoADawAXAqADawAXAhsAbQADAAEABwAF
+AAgABgAJAAgACgAJAAsACwAAAF4BLQEAACUEMQEAAJsANQEAAA8EMQEAAH0GOQEAAKMALQEAAO4G
+QgEAAFQBLQEAACgFRwEAAKkBTAEAAAkHUQEBAAYAAwABAAcABQABAAgABwABAAkACQACABQACwAB
+ABUACwACABcADQABABgADQACABkADwABABoADwACABwAEQABAB0AEQACACAAEwACACEAFQABACIA
+FQACACMAFwA4AEgABIAAAAEAAAAAAAAAAAAAAAAADgAAAAQAAAAAAAAAAAAAAJUAUQAAAAAAEAAA
+AAAAAAAAAAAAngBQBwAAAAAQAAAAAAAAAAAAAACeAG0HAAAAAAQAAAAAAAAAAAAAAJUAQgQAAAAA
+BAAAAAAAAAAAAAAApwCDBgAAAAAAAAAAAQAAALYFAAApADMAAAAAAABMaXN0YDEASW50MzIAU0Nf
+NkMyRTU1MUU3NkFDNEE3MTkzQTM4QUVBMTc3NTc1RTcAPE1vZHVsZT4AR2V0T3V0cHV0SUQAU3lz
+dGVtLklPAG1zY29ybGliAFN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljAE1hcmtPdXRwdXRzRmlu
+aXNoZWQAZ2V0X2lkAHNldF9pZABzZXRfY2F0ZWdvcnlpZAA8aWQ+a19fQmFja2luZ0ZpZWxkADx0
+aXRsZT5rX19CYWNraW5nRmllbGQAPGl0ZW1zPmtfX0JhY2tpbmdGaWVsZAA8c25pcHBldD5rX19C
+YWNraW5nRmllbGQAZGVmYXVsdEluc3RhbmNlAElEaXNwb3NhYmxlAFJ1bnRpbWVUeXBlSGFuZGxl
+AEdldFR5cGVGcm9tSGFuZGxlAEZpbGUAZ2V0X3RpdGxlAHNldF90aXRsZQBzZXRfbmFtZQBNaWNy
+b3NvZnQuU3FsU2VydmVyLkR0cy5QaXBlbGluZQBUeXBlAGdldF9DdWx0dXJlAHNldF9DdWx0dXJl
+AHJlc291cmNlQ3VsdHVyZQBBcHBsaWNhdGlvblNldHRpbmdzQmFzZQBEaXNwb3NlAFBhcnNlAEVk
+aXRvckJyb3dzYWJsZVN0YXRlAENvbXBpbGVyR2VuZXJhdGVkQXR0cmlidXRlAERlYnVnZ2VyTm9u
+VXNlckNvZGVBdHRyaWJ1dGUARGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JCcm93c2FibGVBdHRy
+aWJ1dGUAQXNzZW1ibHlUaXRsZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFya0F0dHJpYnV0ZQBU
+YXJnZXRGcmFtZXdvcmtBdHRyaWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9uQXR0cmlidXRlAEFz
+c2VtYmx5RGVzY3JpcHRpb25BdHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0aW9uc0F0dHJpYnV0
+ZQBBc3NlbWJseVByb2R1Y3RBdHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRBdHRyaWJ1dGUAU1NJ
+U1NjcmlwdENvbXBvbmVudEVudHJ5UG9pbnRBdHRyaWJ1dGUAQXNzZW1ibHlDb21wYW55QXR0cmli
+dXRlAFJ1bnRpbWVDb21wYXRpYmlsaXR5QXR0cmlidXRlAFByZUV4ZWN1dGUAUG9zdEV4ZWN1dGUA
+dmFsdWUARGVzZXJpYWxpemUAU3lzdGVtLlJ1bnRpbWUuVmVyc2lvbmluZwBTeXN0ZW0uQ29tcG9u
+ZW50TW9kZWwAU0NfNkMyRTU1MUU3NkFDNEE3MTkzQTM4QUVBMTc3NTc1RTcuZGxsAHNldF9jYXRl
+Z29yeWlkX0lzTnVsbABzZXRfbmFtZV9Jc051bGwAU2V0TnVsbABzZXRfSXRlbQBTeXN0ZW0AcmVz
+b3VyY2VNYW4AU2NyaXB0TWFpbgBTeXN0ZW0uQ29uZmlndXJhdGlvbgBTeXN0ZW0uR2xvYmFsaXph
+dGlvbgBTeXN0ZW0uV2ViLlNjcmlwdC5TZXJpYWxpemF0aW9uAFN5c3RlbS5SZWZsZWN0aW9uAElu
+dmFsaWRPcGVyYXRpb25FeGNlcHRpb24AQ3VsdHVyZUluZm8AT3V0cHV0TmFtZU1hcABPdXRwdXRN
+YXAAT3V0cHV0MEJ1ZmZlcgBQaXBlbGluZUJ1ZmZlcgBTY3JpcHRCdWZmZXIAZ2V0X1Jlc291cmNl
+TWFuYWdlcgBKYXZhU2NyaXB0U2VyaWFsaXplcgBHZXRFbnVtZXJhdG9yAC5jdG9yAC5jY3RvcgBP
+dXRwdXRJRHMAU3lzdGVtLkRpYWdub3N0aWNzAFN5c3RlbS5SdW50aW1lLkNvbXBpbGVyU2Vydmlj
+ZXMAU3lzdGVtLlJlc291cmNlcwBTQ19iNGU2OWI3MzQ0OWY0MGM0OTI3Y2NiMTY5MmE5NzcwMy5Q
+cm9wZXJ0aWVzLlJlc291cmNlcy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMAU0NfYjRlNjliNzM0
+NDlmNDBjNDkyN2NjYjE2OTJhOTc3MDMuUHJvcGVydGllcwBWYXJpYWJsZXMAQnVmZmVyQ29sdW1u
+SW5kZXhlcwBHZXRDb2x1bW5JbmRleGVzAFNldHRpbmdzAGdldF9pdGVtcwBzZXRfaXRlbXMAU3lz
+dGVtLldlYi5FeHRlbnNpb25zAENvbm5lY3Rpb25zAEJ1ZmZlcnMARmluaXNoT3V0cHV0cwBDcmVh
+dGVOZXdPdXRwdXRSb3dzAE9iamVjdABTbmlwcGV0AGdldF9zbmlwcGV0AHNldF9zbmlwcGV0AFNl
+dEVuZE9mUm93c2V0AGdldF9EZWZhdWx0AFVzZXJDb21wb25lbnQAUGFyZW50Q29tcG9uZW50AFNj
+cmlwdENvbXBvbmVudABnZXRfQ3VycmVudABSb290AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3Jp
+cHQATWljcm9zb2Z0LlNxbFNlcnZlci5QaXBlbGluZUhvc3QAUHJpbWVPdXRwdXQATW92ZU5leHQA
+UmVhZEFsbFRleHQAQWRkUm93AGdldF9Bc3NlbWJseQBDYXRlZ29yeQAAf0MAOgBcAFUAcwBlAHIA
+cwBcAG0AYQB0AGUAdQBcAEQAZQBzAGsAdABvAHAAXABTAHQAdQBkAGkAYQBcADQAIABzAGUAbQBl
+AHMAdAByAFwASQBEAEgAXABHAEIAXwBjAGEAdABlAGcAbwByAHkAXwBpAGQALgBqAHMAbwBuAACA
+m0kAcwBOAHUAbABsACAAcAByAG8AcABlAHIAdAB5ACAAYwBhAG4AbgBvAHQAIABiAGUAIABzAGUA
+dAAgAHQAbwAgAEYAYQBsAHMAZQAuACAAQQBzAHMAaQBnAG4AIABhACAAdgBhAGwAdQBlACAAdABv
+ACAAdABoAGUAIABjAG8AbAB1AG0AbgAgAGkAbgBzAHQAZQBhAGQALgAAEU8AdQB0AHAAdQB0ACAA
+MAAAcVMAQwBfAGIANABlADYAOQBiADcAMwA0ADQAOQBmADQAMABjADQAOQAyADcAYwBjAGIAMQA2
+ADkAMgBhADkANwA3ADAAMwAuAFAAcgBvAHAAZQByAHQAaQBlAHMALgBSAGUAcwBvAHUAcgBjAGUA
+cwAAAAB9xSzptLrGQ5V7Md91j3DWAAQgAQEIAyAAAQUgAQEREQQgAQEOBSABARFlCwcDDhURPQES
+IBIgBAABDg4GMAEBHgAOBAoBEhwGFRI5ARIgCCAAFRE9ARMABhURPQESIAQgABMABAABCA4DIAAC
+CSADARJFHQgSSQUgAgEIHAMHAQgGAAIIEkkOBSABHQgICAABEoCFEYCJBSAAEoCNByACAQ4SgI0I
+t3pcVhk04IkIiYRdzYCAzJEIMb84Vq02TjUDBhIUAwYSGAMGEgwDBhJNBwYVEjkBEiACBg4DBhIk
+AwYSXQMGEmEDBhIsBCABAQILIAQBCB0IHRJFEkkFIAEBEk0IIAAVEjkBEiAJIAEBFRI5ARIgAyAA
+DgQgABIkBSABARIkBAAAEl0EAAASYQUAAQESYQQAABIsAwAAAQMoAA4DKAACAygACAgoABUSOQES
+IAQoABIkBAgAEl0ECAASYQQIABIsCAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhy
+b3dzAQgBAAIAAAAAACgBACNTQ19iNGU2OWI3MzQ0OWY0MGM0OTI3Y2NiMTY5MmE5NzcwMwAABQEA
+AAAAFgEAEUNvcHlyaWdodCBAICAyMDI0AABJAQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjcB
+AFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEi5ORVQgRnJhbWV3b3JrIDQuNwQBAAAAtAAAAM7K774B
+AAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2VzLlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lv
+bj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUw
+ODkjU3lzdGVtLlJlc291cmNlcy5SdW50aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQ
+tAAAABw3AAAAAAAAAAAAADY3AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoNwAAAAAAAAAAAAAA
+AF9Db3JEbGxNYWluAG1zY29yZWUuZGxsAAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAEAEAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgA
+AABYQAAA7AMAAAAAAAAAAAAA7AM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAA
+AL0E7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAA
+AQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8AbgAA
+AAAAAACwBEwDAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAACgDAAABADAAMAAwADAA
+MAA0AGIAMAAAABoAAQABAEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEAbgB5
+AE4AYQBtAGUAAAAAAAAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAA
+UwBDAF8AYgA0AGUANgA5AGIANwAzADQANAA5AGYANAAwAGMANAA5ADIANwBjAGMAYgAxADYAOQAy
+AGEAOQA3ADcAMAAzAAAAMAAIAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADAA
+LgAwAAAAcAAoAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABTAEMAXwA2AEMAMgBFADUANQAx
+AEUANwA2AEEAQwA0AEEANwAxADkAMwBBADMAOABBAEUAQQAxADcANwA1ADcANQBFADcALgBkAGwA
+bAAAAEgAEgABAEwAZQBnAGEAbABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcAaAB0
+ACAAQAAgACAAMgAwADIANAAAACoAAQABAEwAZQBnAGEAbABUAHIAYQBkAGUAbQBhAHIAawBzAAAA
+AAAAAAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAFMAQwBfADYAQwAy
+AEUANQA1ADEARQA3ADYAQQBDADQAQQA3ADEAOQAzAEEAMwA4AEEARQBBADEANwA3ADUANwA1AEUA
+NwAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABTAEMAXwBiADQAZQA2
+ADkAYgA3ADMANAA0ADkAZgA0ADAAYwA0ADkAMgA3AGMAYwBiADEANgA5ADIAYQA5ADcANwAwADMA
+AAA0AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAOAAI
+AAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAADAAAAEg3AAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
+                  </arrayElements>
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                  name="VSTAProjectName"
+                  typeConverter="NOTBROWSABLE">SC_6c2e551e76ac4a7193a38aea177575e7</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the programming language used by the script."
+                  name="ScriptLanguage"
+                  typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read-only variables."
+                  name="ReadOnlyVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a comma-separated list of read/write variables."
+                  name="ReadWriteVariables"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                <property
+                  dataType="System.String"
+                  description="List of breakpoints present on the script."
+                  isArray="true"
+                  name="BreakpointCollection"
+                  typeConverter="NOTBROWSABLE">
+                  <arrayElements
+                    arrayElementCount="0" />
+                </property>
+                <property
+                  dataType="System.String"
+                  description="Checksum to match component metedata against compiled codes."
+                  name="MetadataChecksum140"
+                  typeConverter="NOTBROWSABLE">44</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+              </properties>
+              <outputs>
+                <output
+                  refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component JSON Categories Load.Outputs[Output 0]"
+                  hasSideEffects="true"
+                  name="Output 0">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component JSON Categories Load.Outputs[Output 0].Columns[name]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component JSON Categories Load.Outputs[Output 0].Columns[name]"
+                      name="name" />
+                    <outputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component JSON Categories Load.Outputs[Output 0].Columns[category_id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component JSON Categories Load.Outputs[Output 0].Columns[category_id]"
+                      name="category_id" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
               refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Sort"
               componentClassID="Microsoft.Sort"
               contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
@@ -5849,7 +5849,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="name"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component 1.Outputs[Output 0].Columns[name]">
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component JSON Categories Load.Outputs[Output 0].Columns[name]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -5865,7 +5865,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Sort.Inputs[Sort Input].Columns[category_id]"
                       cachedDataType="i4"
                       cachedName="category_id"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component 1.Outputs[Output 0].Columns[category_id]">
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component JSON Categories Load.Outputs[Output 0].Columns[category_id]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -5899,7 +5899,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component 1.Outputs[Output 0].Columns[name]}</property>
+                          name="SortColumnId">#{Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component JSON Categories Load.Outputs[Output 0].Columns[name]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -5913,7 +5913,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component 1.Outputs[Output 0].Columns[category_id]}</property>
+                          name="SortColumnId">#{Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component JSON Categories Load.Outputs[Output 0].Columns[category_id]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -6048,7 +6048,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[Flat File Source Output]"
               endId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Inputs[Input 0]"
               name="Flat File Source Output"
-              startId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source.Outputs[Flat File Source Output]" />
+              startId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output]" />
             <path
               refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[F_Video]"
               endId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input]"
@@ -6063,7 +6063,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[Output 0]"
               endId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Sort.Inputs[Sort Input]"
               name="Output 0"
-              startId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component 1.Outputs[Output 0]" />
+              startId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component JSON Categories Load.Outputs[Output 0]" />
             <path
               refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[Output 01]"
               endId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 4.Inputs[OLE DB Destination Input]"
@@ -6179,22 +6179,22 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         <NodeLayout
           Size="392,42"
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category"
-          TopLeft="145,374" />
+          TopLeft="312,366" />
         <NodeLayout
           Size="186,42"
           Id="Package\Execute SQL Alter FK"
-          TopLeft="246,468" />
+          TopLeft="413,460" />
         <NodeLayout
           Size="180,42"
           Id="Package\Execute SQL Create"
-          TopLeft="252,267" />
+          TopLeft="419,259" />
         <NodeLayout
           Size="170,42"
           Id="Package\Execute SQL Drop"
-          TopLeft="262,166" />
+          TopLeft="429,158" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="341.5,309">
+          TopLeft="508.5,301">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6216,7 +6216,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="344.5,208">
+          TopLeft="511.5,200">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6238,7 +6238,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="340,416">
+          TopLeft="507,408">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6267,53 +6267,53 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="99,42"
-          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Sort"
-          TopLeft="179.5,193.5" />
-        <NodeLayout
           Size="186,42"
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 3"
           TopLeft="515,498" />
-        <NodeLayout
-          Size="186,42"
-          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 2"
-          TopLeft="926,493" />
-        <NodeLayout
-          Size="186,42"
-          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 4"
-          TopLeft="115,498" />
-        <NodeLayout
-          Size="133,42"
-          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Merge Join"
-          TopLeft="164,288" />
-        <NodeLayout
-          Size="164,42"
-          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component"
-          TopLeft="589,236" />
-        <NodeLayout
-          Size="177,42"
-          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination"
-          TopLeft="325,497" />
-        <NodeLayout
-          Size="108,42"
-          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Sort 1"
-          TopLeft="342.5,233.5" />
-        <NodeLayout
-          Size="176,42"
-          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component 1"
-          TopLeft="134,94" />
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source"
-          TopLeft="594,121" />
         <NodeLayout
           Size="176,42"
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component 2"
           TopLeft="114,404" />
         <NodeLayout
+          Size="108,42"
+          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Sort 1"
+          TopLeft="342.5,233.5" />
+        <NodeLayout
           Size="186,42"
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 1"
           TopLeft="721,493" />
+        <NodeLayout
+          Size="283,42"
+          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component JSON Categories Load"
+          TopLeft="82,94" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination"
+          TopLeft="325,497" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 4"
+          TopLeft="115,498" />
+        <NodeLayout
+          Size="99,42"
+          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Sort"
+          TopLeft="179.5,193.5" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 2"
+          TopLeft="926,493" />
+        <NodeLayout
+          Size="167,42"
+          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component"
+          TopLeft="589,236" />
+        <NodeLayout
+          Size="226,42"
+          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load"
+          TopLeft="564,96" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Merge Join"
+          TopLeft="164,288" />
         <EdgeLayout
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[Sort Output1]"
           TopLeft="229.75,235.5">
@@ -6394,7 +6394,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[Output 0]"
-          TopLeft="225.5,136">
+          TopLeft="226.25,136">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6450,54 +6450,54 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[F_Video]"
-          TopLeft="624.2,278">
+          TopLeft="624.8,278">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-210.7,219"
+              EndConnector="-211.3,219"
               Start="0,0"
-              End="-210.7,211.5">
+              End="-211.3,211.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,61.7747440273038" />
+                    End="0,61.718357082984" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,61.7747440273038"
-                    Point2="0,65.7747440273038"
-                    Point3="-4,65.7747440273038" />
+                    Point1="0,61.718357082984"
+                    Point2="0,65.718357082984"
+                    Point3="-4,65.718357082984" />
                   <mssgle:LineSegment
-                    End="-206.7,65.7747440273038" />
+                    End="-207.3,65.718357082984" />
                   <mssgle:CubicBezierSegment
-                    Point1="-206.7,65.7747440273038"
-                    Point2="-210.7,65.7747440273038"
-                    Point3="-210.7,69.7747440273038" />
+                    Point1="-207.3,65.718357082984"
+                    Point2="-211.3,65.718357082984"
+                    Point3="-211.3,69.718357082984" />
                   <mssgle:LineSegment
-                    End="-210.7,211.5" />
+                    End="-211.3,211.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-123.41703125,70.7747440273038,36.1340625,11.0625"
+              BoundingBox="-123.71703125,70.718357082984,36.1340625,11.0625"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[Flat File Source Output]"
-          TopLeft="671.5,163">
+          TopLeft="674.75,138">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,73"
+              EndConnector="0,98"
               Start="0,0"
-              End="0,65.5">
+              End="0,90.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,65.5" />
+                    End="0,90.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6508,109 +6508,109 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[D_VideoTags]"
-          TopLeft="655.4,278">
+          TopLeft="656.6,278">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-47.4,220"
+              EndConnector="-48.6,220"
               Start="0,0"
-              End="-47.4,212.5">
+              End="-48.6,212.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,94.4366576819407" />
+                    End="0,94.4248841826605" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,94.4366576819407"
-                    Point2="0,98.4366576819407"
-                    Point3="-4,98.4366576819407" />
+                    Point1="0,94.4248841826605"
+                    Point2="0,98.4248841826605"
+                    Point3="-4,98.4248841826605" />
                   <mssgle:LineSegment
-                    End="-43.4,98.4366576819407" />
+                    End="-44.6,98.4248841826605" />
                   <mssgle:CubicBezierSegment
-                    Point1="-43.4,98.4366576819407"
-                    Point2="-47.4,98.4366576819407"
-                    Point3="-47.4,102.436657681941" />
+                    Point1="-44.6,98.4248841826605"
+                    Point2="-48.6,98.4248841826605"
+                    Point3="-48.6,102.424884182661" />
                   <mssgle:LineSegment
-                    End="-47.4,212.5" />
+                    End="-48.6,212.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-40.897578125,103.436657681941,34.39515625,11.3359375"
+              BoundingBox="-41.497578125,103.424884182661,34.39515625,11.3359375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[D_Time]"
-          TopLeft="686.6,278">
+          TopLeft="688.4,278">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="127.4,215"
+              EndConnector="125.6,215"
               Start="0,0"
-              End="127.4,207.5">
+              End="125.6,207.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,92.199460916442" />
+                    End="0,92.1879549966909" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,92.199460916442"
-                    Point2="0,96.199460916442"
-                    Point3="4,96.199460916442" />
+                    Point1="0,92.1879549966909"
+                    Point2="0,96.1879549966909"
+                    Point3="4,96.1879549966909" />
                   <mssgle:LineSegment
-                    End="123.4,96.199460916442" />
+                    End="121.6,96.1879549966909" />
                   <mssgle:CubicBezierSegment
-                    Point1="123.4,96.199460916442"
-                    Point2="127.4,96.199460916442"
-                    Point3="127.4,100.199460916442" />
+                    Point1="121.6,96.1879549966909"
+                    Point2="125.6,96.1879549966909"
+                    Point3="125.6,100.187954996691" />
                   <mssgle:LineSegment
-                    End="127.4,207.5" />
+                    End="125.6,207.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="46.18365234375,101.199460916442,35.0326953125,10.7841796875"
+              BoundingBox="45.28365234375,101.187954996691,35.0326953125,10.7841796875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[D_Channel]"
-          TopLeft="717.8,278">
+          TopLeft="720.2,278">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="301.2,215"
+              EndConnector="298.8,215"
               Start="0,0"
-              End="301.2,207.5">
+              End="298.8,207.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,60.5733788395905" />
+                    End="0,60.5180217937971" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,60.5733788395905"
-                    Point2="0,64.5733788395905"
-                    Point3="4,64.5733788395905" />
+                    Point1="0,60.5180217937971"
+                    Point2="0,64.5180217937971"
+                    Point3="4,64.5180217937971" />
                   <mssgle:LineSegment
-                    End="297.2,64.5733788395905" />
+                    End="294.8,64.5180217937971" />
                   <mssgle:CubicBezierSegment
-                    Point1="297.2,64.5733788395905"
-                    Point2="301.2,64.5733788395905"
-                    Point3="301.2,68.5733788395905" />
+                    Point1="294.8,64.5180217937971"
+                    Point2="298.8,64.5180217937971"
+                    Point3="298.8,68.5180217937971" />
                   <mssgle:LineSegment
-                    End="301.2,207.5" />
+                    End="298.8,207.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="126.41787109375,69.5733788395905,48.3642578125,11.0625"
+              BoundingBox="125.21787109375,69.5180217937971,48.3642578125,11.0625"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
