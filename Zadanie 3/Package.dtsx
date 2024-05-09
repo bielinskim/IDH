@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{1D1197FF-9D67-4148-8F93-9BD35216652F}">
+  DTS:VersionBuild="39"
+  DTS:VersionGUID="{A6755F74-8586-48C7-99DE-62851CE56338}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,10 +29,34 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[db-mssql.s26752 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E587176A-D887-4A0A-BE73-583481C16375}"
+      DTS:ObjectName="db-mssql.s26752 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=db-mssql;Initial Catalog=s26752;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[db-mssql.s26752 3]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{C7944C33-4CB1-4CD0-81E1-E55EEEC217E7}"
       DTS:ObjectName="db-mssql.s26752 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=db-mssql;Initial Catalog=s26752;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[db-mssql.s26752 4]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{8DF96712-1B89-4F27-A076-27A9D6A99FE3}"
+      DTS:ObjectName="db-mssql.s26752 4">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
@@ -419,14 +443,15 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[description]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[country]"
                       codePage="1250"
-                      dataType="text"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[description]"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[description]"
-                      name="description"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[country]"
+                      length="50"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[country]"
+                      name="country"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -458,19 +483,19 @@
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[title]"
                       codePage="1250"
                       dataType="str"
-                      length="200"
+                      length="50"
                       name="title" />
                     <externalMetadataColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[channel_title]"
                       codePage="1250"
                       dataType="str"
-                      length="1000"
+                      length="50"
                       name="channel_title" />
                     <externalMetadataColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[category_id]"
                       codePage="1250"
                       dataType="str"
-                      length="200"
+                      length="50"
                       name="category_id" />
                     <externalMetadataColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[publish_time]"
@@ -482,37 +507,37 @@
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[tags]"
                       codePage="1250"
                       dataType="str"
-                      length="2000"
+                      length="50"
                       name="tags" />
                     <externalMetadataColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[views]"
                       codePage="1250"
                       dataType="str"
-                      length="1000"
+                      length="50"
                       name="views" />
                     <externalMetadataColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[likes]"
                       codePage="1250"
                       dataType="str"
-                      length="1000"
+                      length="50"
                       name="likes" />
                     <externalMetadataColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[dislikes]"
                       codePage="1250"
                       dataType="str"
-                      length="1000"
+                      length="50"
                       name="dislikes" />
                     <externalMetadataColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[comment_count]"
                       codePage="1250"
                       dataType="str"
-                      length="1000"
+                      length="50"
                       name="comment_count" />
                     <externalMetadataColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[thumbnail_link]"
                       codePage="1250"
                       dataType="str"
-                      length="1000"
+                      length="50"
                       name="thumbnail_link" />
                     <externalMetadataColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[comments_disabled]"
@@ -533,10 +558,11 @@
                       length="50"
                       name="video_error_or_removed" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[description]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].ExternalColumns[country]"
                       codePage="1250"
-                      dataType="text"
-                      name="description" />
+                      dataType="str"
+                      length="50"
+                      name="country" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -722,7 +748,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[F_Videos]</property>
+                  name="OpenRowset">[dbo].[F_Videos]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -765,8 +791,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[db-mssql.s26752 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[db-mssql.s26752 1]"
+                  connectionManagerID="{025E8FF0-8B8F-454B-8A39-DFC12CD210FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[db-mssql.s26752]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -786,14 +812,6 @@
                       cachedName="id"
                       externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
                       lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[id]" />
-                    <inputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[video_title]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="200"
-                      cachedName="video_title"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[video_title]"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[video_title]" />
                     <inputColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[time_id]"
                       cachedDataType="i4"
@@ -837,25 +855,11 @@
                       externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[comments]"
                       lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[comments]" />
                     <inputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[rating_disabled]"
-                      cachedDataType="bool"
-                      cachedName="rating_disabled"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[rating_disabled]"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[rating_disabled]" />
-                    <inputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[comments_disabled]"
-                      cachedDataType="bool"
-                      cachedName="comments_disabled"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[comments_disabled]"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[comments_disabled]" />
-                    <inputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[trending_date]"
-                      cachedCodepage="1250"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="trending_date"
-                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[trending_date]"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[trending_date]" />
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[country_id]"
+                      cachedDataType="i4"
+                      cachedName="country_id"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_id]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[country_id]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -865,12 +869,6 @@
                       dataType="str"
                       length="50"
                       name="id" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[video_title]"
-                      codePage="1250"
-                      dataType="str"
-                      length="200"
-                      name="video_title" />
                     <externalMetadataColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[time_id]"
                       dataType="i4"
@@ -900,19 +898,9 @@
                       dataType="i4"
                       name="comments" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[rating_disabled]"
-                      dataType="bool"
-                      name="rating_disabled" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[comments_disabled]"
-                      dataType="bool"
-                      name="comments_disabled" />
-                    <externalMetadataColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[trending_date]"
-                      codePage="1250"
-                      dataType="str"
-                      length="50"
-                      name="trending_date" />
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[country_id]"
+                      dataType="i4"
+                      name="country_id" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -957,7 +945,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[D_Time]</property>
+                  name="OpenRowset">[dbo].[D_Time]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -1000,8 +988,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 1.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[db-mssql.s26752 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[db-mssql.s26752 1]"
+                  connectionManagerID="{025E8FF0-8B8F-454B-8A39-DFC12CD210FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[db-mssql.s26752]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1110,7 +1098,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[D_Channel]</property>
+                  name="OpenRowset">[dbo].[D_Channel]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -1153,8 +1141,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 2.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[db-mssql.s26752 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[db-mssql.s26752 1]"
+                  connectionManagerID="{025E8FF0-8B8F-454B-8A39-DFC12CD210FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[db-mssql.s26752]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1237,7 +1225,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[D_Tags]</property>
+                  name="OpenRowset">[dbo].[D_Tags]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -1280,8 +1268,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 3.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[db-mssql.s26752 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[db-mssql.s26752 1]"
+                  connectionManagerID="{025E8FF0-8B8F-454B-8A39-DFC12CD210FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[db-mssql.s26752]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1415,8 +1403,8 @@
               <connections>
                 <connection
                   refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 4.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[db-mssql.s26752 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[db-mssql.s26752 1]"
+                  connectionManagerID="{025E8FF0-8B8F-454B-8A39-DFC12CD210FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[db-mssql.s26752]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -1476,6 +1464,302 @@
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 4.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 4.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 5"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination 5"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[D_Country]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 5.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[db-mssql.s26752 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[db-mssql.s26752 2]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 5.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 5.Inputs[OLE DB Destination Input].Columns[country_id]"
+                      cachedDataType="i4"
+                      cachedName="country_id"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 5.Inputs[OLE DB Destination Input].ExternalColumns[country_id]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Country].Columns[country_id]" />
+                    <inputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 5.Inputs[OLE DB Destination Input].Columns[name]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="name"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 5.Inputs[OLE DB Destination Input].ExternalColumns[name]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Country].Columns[name]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 5.Inputs[OLE DB Destination Input].ExternalColumns[name]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 5.Inputs[OLE DB Destination Input].ExternalColumns[country_id]"
+                      dataType="i4"
+                      name="country_id" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 5.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 5.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 5.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 5.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 5.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 5.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination 6"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[D_Video_Info]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[db-mssql.s26752 4]"
+                  connectionManagerRefId="Package.ConnectionManagers[db-mssql.s26752 4]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Inputs[OLE DB Destination Input].Columns[video_title]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="video_title"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Inputs[OLE DB Destination Input].ExternalColumns[video_title]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Video_Info].Columns[video_title]" />
+                    <inputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Inputs[OLE DB Destination Input].Columns[rating_disabled]"
+                      cachedDataType="bool"
+                      cachedName="rating_disabled"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Inputs[OLE DB Destination Input].ExternalColumns[rating_disabled]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Video_Info].Columns[rating_disabled]" />
+                    <inputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Inputs[OLE DB Destination Input].Columns[comments_disabled]"
+                      cachedDataType="bool"
+                      cachedName="comments_disabled"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Inputs[OLE DB Destination Input].ExternalColumns[comments_disabled]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Video_Info].Columns[comments_disabled]" />
+                    <inputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Inputs[OLE DB Destination Input].Columns[tredning_date]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="tredning_date"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Inputs[OLE DB Destination Input].ExternalColumns[trending_date]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Video_Info].Columns[tredning_date]" />
+                    <inputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Inputs[OLE DB Destination Input].Columns[video_id]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="video_id"
+                      externalMetadataColumnId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Inputs[OLE DB Destination Input].ExternalColumns[video_id]"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Video_Info].Columns[video_id]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Inputs[OLE DB Destination Input].ExternalColumns[video_id]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="video_id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Inputs[OLE DB Destination Input].ExternalColumns[video_title]"
+                      codePage="1250"
+                      dataType="str"
+                      length="200"
+                      name="video_title" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Inputs[OLE DB Destination Input].ExternalColumns[rating_disabled]"
+                      dataType="bool"
+                      name="rating_disabled" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Inputs[OLE DB Destination Input].ExternalColumns[comments_disabled]"
+                      dataType="bool"
+                      name="comments_disabled" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Inputs[OLE DB Destination Input].ExternalColumns[trending_date]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="trending_date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Inputs[OLE DB Destination Input].ExternalColumns[video_info_id]"
+                      dataType="i4"
+                      name="video_info_id" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1673,6 +1957,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
 using Microsoft.SqlServer.Dts.Runtime.Wrapper;
 #endregion
@@ -1797,6 +2082,9 @@ public class ScriptMain : UserComponent
     int timeId = 0;
     int channelId = 0;
 
+    Dictionary<string, int> countriesIds = new Dictionary<string, int>();
+    int countryId = 0;
+
     HashSet<string> videosIds = new HashSet<string>();
 
     public override void Input0_ProcessInputRow(Input0Buffer Row)
@@ -1806,16 +2094,38 @@ public class ScriptMain : UserComponent
             if (!videosIds.Contains(Row.videoid)) {
                 videosIds.Add(Row.videoid);
 
+                // VIDEO
                 FVideoBuffer.AddRow();
                 FVideoBuffer.id = Row.videoid;
-                FVideoBuffer.videotitle = Row.title;
                 FVideoBuffer.views = int.Parse(Row.views);
                 FVideoBuffer.comments = int.Parse(Row.commentcount);
                 FVideoBuffer.likes = int.Parse(Row.likes);
                 FVideoBuffer.dislikes = int.Parse(Row.commentcount);
-                FVideoBuffer.commentsdisabled = bool.Parse(Row.commentsdisabled);
-                FVideoBuffer.ratingdisabled = bool.Parse(Row.ratingsdisabled);
-                FVideoBuffer.trendingdate = Row.trendingdate;
+
+                // VIDEO_INFO
+                DVideoInfoBuffer.AddRow();
+                DVideoInfoBuffer.videoid = Row.videoid;
+                DVideoInfoBuffer.videotitle = Row.title;
+                DVideoInfoBuffer.commentsdisabled = bool.Parse(Row.commentsdisabled);
+                DVideoInfoBuffer.ratingdisabled = bool.Parse(Row.ratingsdisabled);
+                DVideoInfoBuffer.tredningdate = Row.trendingdate;
+
+                // COUNTRY
+                int currentCountryId = 0;
+
+                if(countriesIds.ContainsKey(Row.country))
+                {
+                    countriesIds.TryGetValue(Row.country, out currentCountryId);
+                } else {
+                    countryId++;
+                    countriesIds.Add(Row.country, countryId);
+                    DCountryBuffer.AddRow();
+                    DCountryBuffer.countryid = countryId;
+                    DCountryBuffer.name = Row.country;
+                    currentCountryId = countryId;
+                }
+
+                FVideoBuffer.countryid = currentCountryId;
 
                 // CATEGORY
                 int categoryid = int.Parse(Row.categoryid);
@@ -2126,6 +2436,21 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
+    public String country
+    {
+        get
+        {
+            return Buffer.GetString(BufferColumnIndexes[15]);
+        }
+    }
+    public bool country_IsNull
+    {
+        get
+        {
+            return IsNull(15);
+        }
+    }
+
     new public bool NextRow()
     {
         return base.NextRow();
@@ -2168,14 +2493,14 @@ public class FVideoBuffer: ScriptBuffer
         }
     }
 
-    public String videotitle
+    public Int32 timeid
     {
         set
         {
             this[1] = value;
         }
     }
-    public bool videotitle_IsNull
+    public bool timeid_IsNull
     {
         set
         {
@@ -2190,14 +2515,14 @@ public class FVideoBuffer: ScriptBuffer
         }
     }
 
-    public Int32 timeid
+    public Int32 channelid
     {
         set
         {
             this[2] = value;
         }
     }
-    public bool timeid_IsNull
+    public bool channelid_IsNull
     {
         set
         {
@@ -2212,14 +2537,14 @@ public class FVideoBuffer: ScriptBuffer
         }
     }
 
-    public Int32 channelid
+    public Int32 categoryid
     {
         set
         {
             this[3] = value;
         }
     }
-    public bool channelid_IsNull
+    public bool categoryid_IsNull
     {
         set
         {
@@ -2234,14 +2559,14 @@ public class FVideoBuffer: ScriptBuffer
         }
     }
 
-    public Int32 categoryid
+    public Int32 views
     {
         set
         {
             this[4] = value;
         }
     }
-    public bool categoryid_IsNull
+    public bool views_IsNull
     {
         set
         {
@@ -2256,14 +2581,14 @@ public class FVideoBuffer: ScriptBuffer
         }
     }
 
-    public Int32 views
+    public Int32 dislikes
     {
         set
         {
             this[5] = value;
         }
     }
-    public bool views_IsNull
+    public bool dislikes_IsNull
     {
         set
         {
@@ -2278,14 +2603,14 @@ public class FVideoBuffer: ScriptBuffer
         }
     }
 
-    public Int32 dislikes
+    public Int32 likes
     {
         set
         {
             this[6] = value;
         }
     }
-    public bool dislikes_IsNull
+    public bool likes_IsNull
     {
         set
         {
@@ -2300,14 +2625,14 @@ public class FVideoBuffer: ScriptBuffer
         }
     }
 
-    public Int32 likes
+    public Int32 comments
     {
         set
         {
             this[7] = value;
         }
     }
-    public bool likes_IsNull
+    public bool comments_IsNull
     {
         set
         {
@@ -2322,14 +2647,14 @@ public class FVideoBuffer: ScriptBuffer
         }
     }
 
-    public Int32 comments
+    public Int32 countryid
     {
         set
         {
             this[8] = value;
         }
     }
-    public bool comments_IsNull
+    public bool countryid_IsNull
     {
         set
         {
@@ -2344,11 +2669,127 @@ public class FVideoBuffer: ScriptBuffer
         }
     }
 
+    new public void AddRow()
+    {
+        base.AddRow();
+    }
+
+    new public void SetEndOfRowset()
+    {
+        base.SetEndOfRowset();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+
+public class DCountryBuffer: ScriptBuffer
+
+{
+    public DCountryBuffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public String name
+    {
+        set
+        {
+            this[0] = value;
+        }
+    }
+    public bool name_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(0);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Int32 countryid
+    {
+        set
+        {
+            this[1] = value;
+        }
+    }
+    public bool countryid_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(1);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public void AddRow()
+    {
+        base.AddRow();
+    }
+
+    new public void SetEndOfRowset()
+    {
+        base.SetEndOfRowset();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+
+public class DVideoInfoBuffer: ScriptBuffer
+
+{
+    public DVideoInfoBuffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public String videotitle
+    {
+        set
+        {
+            this[0] = value;
+        }
+    }
+    public bool videotitle_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(0);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
     public Boolean ratingdisabled
     {
         set
         {
-            this[9] = value;
+            this[1] = value;
         }
     }
     public bool ratingdisabled_IsNull
@@ -2357,7 +2798,7 @@ public class FVideoBuffer: ScriptBuffer
         {
             if (value)
             {
-                SetNull(9);
+                SetNull(1);
             }
             else
             {
@@ -2370,7 +2811,7 @@ public class FVideoBuffer: ScriptBuffer
     {
         set
         {
-            this[10] = value;
+            this[2] = value;
         }
     }
     public bool commentsdisabled_IsNull
@@ -2379,7 +2820,7 @@ public class FVideoBuffer: ScriptBuffer
         {
             if (value)
             {
-                SetNull(10);
+                SetNull(2);
             }
             else
             {
@@ -2388,20 +2829,42 @@ public class FVideoBuffer: ScriptBuffer
         }
     }
 
-    public String trendingdate
+    public String tredningdate
     {
         set
         {
-            this[11] = value;
+            this[3] = value;
         }
     }
-    public bool trendingdate_IsNull
+    public bool tredningdate_IsNull
     {
         set
         {
             if (value)
             {
-                SetNull(11);
+                SetNull(3);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public String videoid
+    {
+        set
+        {
+            this[4] = value;
+        }
+    }
+    public bool videoid_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(4);
             }
             else
             {
@@ -2830,6 +3293,10 @@ public class UserComponent: ScriptComponent
 
     public FVideoBuffer FVideoBuffer;
 
+    public DCountryBuffer DCountryBuffer;
+
+    public DVideoInfoBuffer DVideoInfoBuffer;
+
     public DCategoryBuffer DCategoryBuffer;
 
     public DTagsBuffer DTagsBuffer;
@@ -2873,6 +3340,18 @@ public class UserComponent: ScriptComponent
             FVideoBuffer = null;
         }
 
+        if (null != DCountryBuffer)
+        {
+            DCountryBuffer.SetEndOfRowset();
+            DCountryBuffer = null;
+        }
+
+        if (null != DVideoInfoBuffer)
+        {
+            DVideoInfoBuffer.SetEndOfRowset();
+            DVideoInfoBuffer = null;
+        }
+
         if (null != DCategoryBuffer)
         {
             DCategoryBuffer.SetEndOfRowset();
@@ -2906,6 +3385,14 @@ public class UserComponent: ScriptComponent
             if(OutputIDs[Idx] == GetOutputID(OutputMap, @"F_Video"))
             {
                 FVideoBuffer = new FVideoBuffer(Buffers[Idx], GetColumnIndexes(OutputIDs[Idx]), OutputMap);
+            }
+            if(OutputIDs[Idx] == GetOutputID(OutputMap, @"D_Country"))
+            {
+                DCountryBuffer = new DCountryBuffer(Buffers[Idx], GetColumnIndexes(OutputIDs[Idx]), OutputMap);
+            }
+            if(OutputIDs[Idx] == GetOutputID(OutputMap, @"D_Video_Info"))
+            {
+                DVideoInfoBuffer = new DVideoInfoBuffer(Buffers[Idx], GetColumnIndexes(OutputIDs[Idx]), OutputMap);
             }
             if(OutputIDs[Idx] == GetOutputID(OutputMap, @"D_Category"))
             {
@@ -2980,7 +3467,7 @@ public class Variables
     <msb:CodeName>SC_9ed77f38694e4143844ddc90fac89ab5</msb:CodeName>
     <msb:Language>msBuild</msb:Language>
     <msb:DisplayName>SC_9ed77f38694e4143844ddc90fac89ab5</msb:DisplayName>
-    <msb:ProjectId>{838EE6C5-3116-4BB8-88EA-C13FFC9B4F4E}</msb:ProjectId>
+    <msb:ProjectId>{94538F4D-2E7F-4F0E-A172-45B285458806}</msb:ProjectId>
   </msb:PropertyGroup>
   <msb:ItemGroup>
     <msb:Project Include="SC_9ed77f38694e4143844ddc90fac89ab5.csproj" />
@@ -3185,239 +3672,257 @@ namespace SC_9ed77f38694e4143844ddc90fac89ab5.Properties {
                     <arrayElement
                       dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAF06JGYAAAAAAAAAAOAAIiALATAAAC4AAAAIAAAAAAAANk0A
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAF8OPWYAAAAAAAAAAOAAIiALATAAADIAAAAIAAAAAAAAQlEA
 AAAgAAAAYAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACgAAAAAgAAAAAAAAMAYIUAABAA
-ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAORMAABPAAAAAGAAAEgEAAAAAAAAAAAAAAAAAAAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAPBQAABPAAAAAGAAAEgEAAAAAAAAAAAAAAAAAAAA
 AAAAAIAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAPC0AAAAgAAAALgAAAAIA
-AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAYAAAAAYAAAAwAAAAAAAAAAAAAAAAAABAAABA
-LnJlbG9jAAAMAAAAAIAAAAACAAAANgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAY
-TQAAAAAAAEgAAAACAAUAICoAAAwiAAABAAAAAAAAACxMAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACiobMAUAjAIAAAEAABECewQAAAQD
-bwcAAAZvEgAACjpZAgAAAnsEAAAEA28HAAAGbxMAAAomAnsHAAAEb0AAAAYCewcAAAQDbwcAAAZv
-KAAABgJ7BwAABANvCwAABm8qAAAGAnsHAAAEA28TAAAGKBQAAApvMgAABgJ7BwAABANvGQAABigU
-AAAKbzgAAAYCewcAAAQDbxUAAAYoFAAACm82AAAGAnsHAAAEA28ZAAAGKBQAAApvNAAABgJ7BwAA
-BANvHQAABigVAAAKbzwAAAYCewcAAAQDbx8AAAYoFQAACm86AAAGAnsHAAAEA28JAAAGbz4AAAYD
-bw8AAAYoFAAACgoCewcAAAQGbzAAAAYCewgAAARvSAAABgJ7CAAABAZvRAAABgJ7CAAABHIBAABw
-b0YAAAYCAnsDAAAEF1h9AwAABAJ7BwAABAJ7AwAABG8uAAAGAnsLAAAEb2YAAAYCewsAAAQCewMA
-AARvZAAABgJ7CwAABANvDQAABm9iAAAGAgJ7AgAABBdYfQIAAAQCewcAAAQCewIAAARvLAAABgJ7
-CgAABG9eAAAGAnsKAAAEAnsCAAAEb1QAAAYDbxEAAAZyAwAAcBQfQBIBKBYAAAomAnsKAAAEB29c
-AAAGAnsKAAAEEgEoFwAACm9aAAAGAnsKAAAEEgEoGAAACm9YAAAGAnsBAAAEEgEoFwAAChICbxkA
-AAomAnsKAAAECG9WAAAGA28jAAAGF40iAAABJRYffJ1vGgAACg0WEwQrNQkRBJoTBQJ7CQAABG9Q
-AAAGAnsJAAAEA28HAAAGb04AAAYCewkAAAQRBW9MAAAGEQQXWBMEEQQJjmkyxN4aEwZyPQAAcBEG
-bxsAAAooHAAACigdAAAK3gAqQRwAAAAAAAAAAAAAcQIAAHECAAAaAAAAEQAAAQYqAAATMAUAgQAA
-AAAAAAACcx4AAAolFxdvHwAACiUYF28fAAAKJRkXbx8AAAolGhhvHwAACiUbGG8fAAAKJRwYbx8A
-AAolHRlvHwAACiUeGW8fAAAKJR8JGW8fAAAKJR8KGm8fAAAKJR8LGm8fAAAKJR8MGm8fAAAKfQEA
-AAQCcyAAAAp9BAAABAIoaQAABioqAgMEBSghAAAKKlICeyIAAAoCeyMAAAoWlG8kAAAKKiICFigl
-AAAKKlICeyIAAAoCeyMAAAoXlG8kAAAKKiICFyglAAAKKlICeyIAAAoCeyMAAAoYlG8kAAAKKiIC
-GCglAAAKKlICeyIAAAoCeyMAAAoZlG8kAAAKKiICGSglAAAKKlICeyIAAAoCeyMAAAoalG8kAAAK
-KiICGiglAAAKKlICeyIAAAoCeyMAAAoblG8kAAAKKiICGyglAAAKKlICeyIAAAoCeyMAAAoclG8k
-AAAKKiICHCglAAAKKlICeyIAAAoCeyMAAAodlG8kAAAKKiICHSglAAAKKlICeyIAAAoCeyMAAAoe
-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
-BgAZAe8KpQCpAMwKrQCZAHsLmwCpAFMAtwCxAIsJBgA5AagBvgA5AW8MxwDBAIsJzQDhAIsJBgAu
-AAsAiwEuABMAlAEuABsAswEuACMAvAEuACsA5QEuADMA5QEuADsA5QEuAEMAvAEuAEsA6wEuAFMA
-5QEuAFsAAgJDAGMATAKDAWsATAIhAnsATAKpCXMAswHJCXMAswEbALMAAwABAAQAHwAFADcABgA7
-AAcAPwAIAEkADABNAA0ATwAAAFQBawEAABkGbwEAAMgCawEAAP0GbwEAAOYBawEAAIYGbwEAANAB
-awEAAGkGbwEAAG8BawEAAEIGbwEAACUCawEAAM4GbwEAAEULawEAAPAHbwEAAJkKawEAAKoHbwEA
-AJYKawEAAKcHbwEAAN4LawEAAAEIbwEAAPUEawEAADUHbwEAAPsAawEAAJYFbwEAANIAawEAAF8F
-bwEAABABawEAALIFbwEAAOEKawEAALsHbwEAAHcBawEAAEoGbwEAAOEBawEAAIEGbwEAAC8BcwEA
-AN8FbwEAADoBcwEAAPEFbwEAAG8BcwEAAEIGbwEAAEULcwEAAPAHbwEAAJYKcwEAAKcHbwEAAJkK
-cwEAAKoHbwEAACALcwEAAMsHbwEAAL8AbwEAAEUFbwEAAPsAbwEAAJYFbwEAAMgCawEAAP0GbwEA
-AG8BcwEAAEIGbwEAAAoCawEAAK4GbwEAALUEawEAABUHbwEAAFQBawEAABkGbwEAAC8BcwEAAN8F
-bwEAAIMJcwEAAF4HbwEAAOQIcwEAAE4HbwEAAOsEcwEAACQHbwEAACwCdwEAANUGbwEAAAMCawEA
-AKcGbwEAADoBcwEAAPEFbwEAAG8JfAEAAI0CgQEAAKQLhgECAAcAAwACAAgABQACAAkABwACAAoA
-CQACAAsACwACAAwADQACAA0ADwACAA4AEQACAA8AEwACABAAFQACABEAFwACABIAGQACABMAGwAC
-ABQAHQACABUAHwACABYAIQACABcAIwACABgAJQACABkAJwACABoAKQACABsAKwACABwALQACAB0A
-LwACAB4AMQACAB8AMwACACAANQACACEANwACACIAOQACACMAOwACACQAPQABACgAPwABACkAQQAB
-ACoAQwABACsARQABACwARwABAC0ASQABAC4ASwABAC8ATQABADAATwABADEAUQABADIAUwABADMA
-VQABADQAVwABADUAWQABADYAWwABADcAXQABADgAXwABADkAYQABADoAYwABADsAZQABADwAZwAB
-AD0AaQABAD4AawABAD8AbQABAEQAbwABAEUAcQABAEYAcwABAEcAdQABAEwAdwABAE0AeQABAE4A
-ewABAE8AfQABAFQAfwABAFUAgQABAFYAgwABAFcAhQABAFgAhwABAFkAiQABAFoAiwABAFsAjQAB
-AFwAjwABAF0AkQABAGIAkwABAGMAlQABAGQAlwABAGUAmQACAHQAmwACAHUAnQABAHYAnQACAHcA
-nwAoAFEABIAAAAEAAAAAAAAAAAAAAAAAHgAAAAQAAAAAAAAAAAAAANUAXwAAAAAAEAAAAAAAAAAA
-AAAA3gDrCwAAAAAEAAAAAAAAAAAAAADVAGECAAAAABAAAAAAAAAAAAAAAN4ACAwAAAAABAAAAAAA
-AAAAAAAA1QAmCAAAAAAAAAAAAQAAAPAJAAAAAABIYXNoU2V0YDEASW50MzIARGljdGlvbmFyeWAy
-AFNDXzllZDc3ZjM4Njk0ZTQxNDM4NDRkZGM5MGZhYzg5YWI1ADxNb2R1bGU+AElucHV0SUQAR2V0
-T3V0cHV0SUQAbXNjb3JsaWIAU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMAdGltZUlkAGNoYW5u
-ZWxJZABBZGQASW5wdXRzRmluaXNoZWQATWFya091dHB1dHNGaW5pc2hlZABzZXRfcmF0aW5nZGlz
-YWJsZWQAZ2V0X3JhdGluZ3NkaXNhYmxlZABnZXRfY29tbWVudHNkaXNhYmxlZABzZXRfY29tbWVu
-dHNkaXNhYmxlZABnZXRfdmlkZW9lcnJvcm9ycmVtb3ZlZABzZXRfaWQAc2V0X3RpbWVpZABzZXRf
-Y2hhbm5lbGlkAGdldF92aWRlb2lkAHNldF92aWRlb2lkAGdldF9jYXRlZ29yeWlkAHNldF9jYXRl
-Z29yeWlkAGRlZmF1bHRJbnN0YW5jZQBnZXRfTWVzc2FnZQBSdW50aW1lVHlwZUhhbmRsZQBHZXRU
-eXBlRnJvbUhhbmRsZQBDb25zb2xlAGdldF90aXRsZQBnZXRfY2hhbm5lbHRpdGxlAHNldF92aWRl
-b3RpdGxlAElucHV0TmFtZQBzZXRfbmFtZQBzZXRfY2hhbm5lbG5hbWUARGF0ZVRpbWUAc2V0X3Rp
-bWUAZ2V0X3B1Ymxpc2h0aW1lAFdyaXRlTGluZQBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5QaXBl
-bGluZQBUeXBlAFN5c3RlbS5Db3JlAGdldF9DdWx0dXJlAHNldF9DdWx0dXJlAHJlc291cmNlQ3Vs
-dHVyZQBBcHBsaWNhdGlvblNldHRpbmdzQmFzZQBQYXJzZQBnZXRfdHJlbmRpbmdkYXRlAHNldF90
-cmVuZGluZ2RhdGUARWRpdG9yQnJvd3NhYmxlU3RhdGUAQ29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1
-dGUARGVidWdnZXJOb25Vc2VyQ29kZUF0dHJpYnV0ZQBEZWJ1Z2dhYmxlQXR0cmlidXRlAEVkaXRv
-ckJyb3dzYWJsZUF0dHJpYnV0ZQBBc3NlbWJseVRpdGxlQXR0cmlidXRlAEFzc2VtYmx5VHJhZGVt
-YXJrQXR0cmlidXRlAFRhcmdldEZyYW1ld29ya0F0dHJpYnV0ZQBBc3NlbWJseUNvbmZpZ3VyYXRp
-b25BdHRyaWJ1dGUAQXNzZW1ibHlEZXNjcmlwdGlvbkF0dHJpYnV0ZQBDb21waWxhdGlvblJlbGF4
-YXRpb25zQXR0cmlidXRlAEFzc2VtYmx5UHJvZHVjdEF0dHJpYnV0ZQBBc3NlbWJseUNvcHlyaWdo
-dEF0dHJpYnV0ZQBTU0lTU2NyaXB0Q29tcG9uZW50RW50cnlQb2ludEF0dHJpYnV0ZQBBc3NlbWJs
-eUNvbXBhbnlBdHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUAUHJlRXhlY3V0
-ZQBQb3N0RXhlY3V0ZQBUcnlHZXRWYWx1ZQB2YWx1ZQBzZXRfdGFnAFN5c3RlbS5SdW50aW1lLlZl
-cnNpb25pbmcAR2V0U3RyaW5nAGdldF9Nb250aABzZXRfbW9udGgAZ2V0X3RodW1ibmFpbGxpbmsA
-U3lzdGVtLkNvbXBvbmVudE1vZGVsAFNDXzllZDc3ZjM4Njk0ZTQxNDM4NDRkZGM5MGZhYzg5YWI1
-LmRsbABzZXRfcmF0aW5nZGlzYWJsZWRfSXNOdWxsAGdldF9yYXRpbmdzZGlzYWJsZWRfSXNOdWxs
-AGdldF9jb21tZW50c2Rpc2FibGVkX0lzTnVsbABzZXRfY29tbWVudHNkaXNhYmxlZF9Jc051bGwA
-Z2V0X3ZpZGVvZXJyb3JvcnJlbW92ZWRfSXNOdWxsAHNldF9pZF9Jc051bGwAc2V0X3RpbWVpZF9J
-c051bGwAc2V0X2NoYW5uZWxpZF9Jc051bGwAZ2V0X3ZpZGVvaWRfSXNOdWxsAHNldF92aWRlb2lk
-X0lzTnVsbABnZXRfY2F0ZWdvcnlpZF9Jc051bGwAc2V0X2NhdGVnb3J5aWRfSXNOdWxsAGdldF90
-aXRsZV9Jc051bGwAZ2V0X2NoYW5uZWx0aXRsZV9Jc051bGwAc2V0X3ZpZGVvdGl0bGVfSXNOdWxs
-AHNldF9uYW1lX0lzTnVsbABzZXRfY2hhbm5lbG5hbWVfSXNOdWxsAHNldF90aW1lX0lzTnVsbABn
-ZXRfcHVibGlzaHRpbWVfSXNOdWxsAGdldF90cmVuZGluZ2RhdGVfSXNOdWxsAHNldF90cmVuZGlu
-Z2RhdGVfSXNOdWxsAHNldF90YWdfSXNOdWxsAHNldF9tb250aF9Jc051bGwAZ2V0X3RodW1ibmFp
-bGxpbmtfSXNOdWxsAHNldF95ZWFyX0lzTnVsbABzZXRfcXVhcnRlcl9Jc051bGwAZ2V0X2xpa2Vz
-X0lzTnVsbABzZXRfbGlrZXNfSXNOdWxsAGdldF9kaXNsaWtlc19Jc051bGwAc2V0X2Rpc2xpa2Vz
-X0lzTnVsbABnZXRfdGFnc19Jc051bGwAc2V0X2NvbW1lbnRzX0lzTnVsbABnZXRfdmlld3NfSXNO
-dWxsAHNldF92aWV3c19Jc051bGwAZ2V0X2NvbW1lbnRjb3VudF9Jc051bGwAU2V0TnVsbABzZXRf
-SXRlbQBTeXN0ZW0AcmVzb3VyY2VNYW4AQm9vbGVhbgBTY3JpcHRNYWluAFN5c3RlbS5Db25maWd1
-cmF0aW9uAFN5c3RlbS5HbG9iYWxpemF0aW9uAFN5c3RlbS5SZWZsZWN0aW9uAEludmFsaWRPcGVy
-YXRpb25FeGNlcHRpb24AU3RyaW5nQ29tcGFyaXNvbgBDdWx0dXJlSW5mbwBPdXRwdXROYW1lTWFw
-AE91dHB1dE1hcABnZXRfWWVhcgBzZXRfeWVhcgBDaGFyAElGb3JtYXRQcm92aWRlcgBJbnB1dDBC
-dWZmZXIARFRpbWVCdWZmZXIAUGlwZWxpbmVCdWZmZXIARENoYW5uZWxCdWZmZXIARlZpZGVvQnVm
-ZmVyAERUYWdzQnVmZmVyAFNjcmlwdEJ1ZmZlcgBEQ2F0ZWdvcnlCdWZmZXIAZ2V0X1Jlc291cmNl
-TWFuYWdlcgBzZXRfcXVhcnRlcgAuY3RvcgAuY2N0b3IAT3V0cHV0SURzAFN5c3RlbS5EaWFnbm9z
-dGljcwB2aWRlb3NJZHMAU3lzdGVtLlJ1bnRpbWUuQ29tcGlsZXJTZXJ2aWNlcwBTeXN0ZW0uUmVz
-b3VyY2VzAFNDXzllZDc3ZjM4Njk0ZTQxNDM4NDRkZGM5MGZhYzg5YWI1LlByb3BlcnRpZXMuUmVz
-b3VyY2VzLnJlc291cmNlcwBEZWJ1Z2dpbmdNb2RlcwBTQ185ZWQ3N2YzODY5NGU0MTQzODQ0ZGRj
-OTBmYWM4OWFiNS5Qcm9wZXJ0aWVzAGdldF9saWtlcwBzZXRfbGlrZXMAZ2V0X2Rpc2xpa2VzAHNl
-dF9kaXNsaWtlcwBWYXJpYWJsZXMARGF0ZVRpbWVTdHlsZXMAQnVmZmVyQ29sdW1uSW5kZXhlcwBH
-ZXRDb2x1bW5JbmRleGVzAGdldF90YWdzAFNldHRpbmdzAEVxdWFscwBDb250YWlucwBDb25uZWN0
-aW9ucwBCdWZmZXJzAHF1YXJ0ZXJzAHNldF9jb21tZW50cwBGaW5pc2hPdXRwdXRzAGdldF92aWV3
-cwBzZXRfdmlld3MAQ3JlYXRlTmV3T3V0cHV0Um93cwBDb25jYXQAVHJ5UGFyc2VFeGFjdABPYmpl
-Y3QAZ2V0X0VuZE9mUm93c2V0AFNldEVuZE9mUm93c2V0AFNwbGl0AGdldF9EZWZhdWx0AFVzZXJD
-b21wb25lbnQAUGFyZW50Q29tcG9uZW50AFNjcmlwdENvbXBvbmVudABnZXRfY29tbWVudGNvdW50
-AE1pY3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3JpcHQATWljcm9zb2Z0LlNxbFNlcnZlci5QaXBlbGlu
-ZUhvc3QASW5wdXQwX1Byb2Nlc3NJbnB1dABQcmltZU91dHB1dABBZGRSb3cASW5wdXQwX1Byb2Nl
-c3NJbnB1dFJvdwBOZXh0Um93AGdldF9Bc3NlbWJseQAAAQA5eQB5AHkAeQAtAE0ATQAtAGQAZAAn
-AFQAJwBIAEgAOgBtAG0AOgBzAHMALgBmAGYAZgAnAFoAJwABF1MAegBjAHoAZQBnAPMAQgF5ADoA
-IAABgJtJAHMATgB1AGwAbAAgAHAAcgBvAHAAZQByAHQAeQAgAGMAYQBuAG4AbwB0ACAAYgBlACAA
-cwBlAHQAIAB0AG8AIABGAGEAbABzAGUALgAgAEEAcwBzAGkAZwBuACAAYQAgAHYAYQBsAHUAZQAg
-AHQAbwAgAHQAaABlACAAYwBvAGwAdQBtAG4AIABpAG4AcwB0AGUAYQBkAC4AAA9JAG4AcAB1AHQA
-IAAwAAAPRgBfAFYAaQBkAGUAbwAAFUQAXwBDAGEAdABlAGcAbwByAHkAAA1EAF8AVABhAGcAcwAA
-DUQAXwBUAGkAbQBlAAATRABfAEMAaABhAG4AbgBlAGwAAHFTAEMAXwA5AGUAZAA3ADcAZgAzADgA
-NgA5ADQAZQA0ADEANAAzADgANAA0AGQAZABjADkAMABmAGEAYwA4ADkAYQBiADUALgBQAHIAbwBw
-AGUAcgB0AGkAZQBzAC4AUgBlAHMAbwB1AHIAYwBlAHMAAAAARdD/ugjexUuw7kSQw2LHZQAEIAEB
-CAMgAAEFIAEBEREEIAEBDgUgAQERaQwHBwgRQQgdDggOEkUFFRI9AQ4FIAECEwAEAAEIDgQAAQIO
-DgAFAg4OEoCBEYCFEBFBAyAACAYVEjkCCAgIIAICEwAQEwEGIAEdDh0DAyAADgUAAg4ODgQAAQEO
-ByACARMAEwEJIAMBEk0dCBJRAwYSTQMGHQgEIAEOCAQgAQIIAyAAAgUgAgEIHAcgAgIOEYCZBSAB
-HQgIAwcBCAYAAggSUQ4IAAESgJ0RgKEFIAASgKUHIAIBDhKApQi3elxWGTTgiQiJhF3NgIDMkQcG
-FRI5AggIAgYIBgYVEj0BDgMGEigDBhIsAwYSEAMGEhQDBhIYAwYSHAMGEiADBhJVAwYSYQMGEmUD
-BhI0BSABARIMBCABAQIFIAEBEUEJIAQBCA4STRJRCyAEAQgdCB0STRJRBSABARJVBAAAEmEEAAAS
-ZQUAAQESZQQAABI0AwAAAQMoAA4DKAACAygACAQoABFBBAgAEmEECAASZQQIABI0CAEACAAAAAAA
-HgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQgBAAIAAAAAACgBACNTQ185ZWQ3N2YzODY5
-NGU0MTQzODQ0ZGRjOTBmYWM4OWFiNQAABQEAAAAAFgEAEUNvcHlyaWdodCBAICAyMDI0AABJAQAa
-Lk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjcBAFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEi5ORVQg
-RnJhbWV3b3JrIDQuNwQBAAAAAAAAtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2VzLlJl
-c291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWws
-IFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNlcy5SdW50aW1l
-UmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAAAxNAAAAAAAAAAAAACZNAAAAIAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAYTQAAAAAAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxsAAAA
-AAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAASDEAAAAgAAAAMgAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAYAAAAAYAAAA0AAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAIAAAAACAAAAOgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAk
+UQAAAAAAAEgAAAACAAUAQCsAAPgkAAABAAAAAAAAADhQAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACiobMAUAOwMAAAEAABECewYAAAQD
+bwcAAAZvEgAACjoIAwAAAnsGAAAEA28HAAAGbxMAAAomAnsJAAAEbzwAAAYCewkAAAQDbwcAAAZv
+KgAABgJ7CQAABANvEwAABigUAAAKbzIAAAYCewkAAAQDbxkAAAYoFAAACm84AAAGAnsJAAAEA28V
+AAAGKBQAAApvNgAABgJ7CQAABANvGQAABigUAAAKbzQAAAYCewsAAARvUgAABgJ7CwAABANvBwAA
+Bm9QAAAGAnsLAAAEA28LAAAGb0gAAAYCewsAAAQDbx0AAAYoFQAACm9MAAAGAnsLAAAEA28fAAAG
+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
+ACULAAADAA0JAAABAMMEAAABAMMEAAABAMMEAAABAMMEAAABAMMEAAABAMMEAAABAMMEAAABAMME
+AAABAMMEAAABAMMEAAABAMQJAAACACULAAADAA0JAAABAMMEAAABAMMEAAABAMMEAAABAMMEAAAB
+AMQJAAACACULAAADAA0JAAABAMMEAAABAMMEAAABAMMEAAABAMMEAAABAMQJAAACACULAAADAA0J
+AAABAMMEAAABAMMEAAABAMMEAAABAMMEAAABAMMEAAABAMMEAAABAMMEAAABAMMEAAABAMMEAAAB
+AMMEAAABAMQJAAACACULAAADAA0JAAABAMMEAAABAMMEAAABAMMEAAABAMMEAAABAEsAAAACAAQC
+AAADAMQJAAAEAA0JAAABAJwLAAACAPgJAAADAHgLAAAEAA0JAAABAMQJAAABANgMAAABAD0MAAAB
+AD0MAAABAMMECQDrCQEAEQDrCQYAGQDrCQoAKQDrCRAAMQDrCRAAOQDrCRAAQQDrCRAASQDrCRAA
+UQDrCRAAWQDrCRAAYQDrCRAAaQDrCQYAuQDrCQYA2QDrCRUA6QDrCQYAqQCgBAYAqQCrBAYADABj
+Cy8ADACeAC8A8QDFAjUA+QDFAjoAFADcDC8AFAC3BEYAFACeAE8AgQDTC1cAgQD1BGYAgQAXCWYA
+HAC3BEYAGQEHDHEAiQCiAXgAGQHMC3wAIQFJAoIAHADrCQYAHACeAE8AFADrCQYADADrCQYAkQDr
+CYcAkQDECZEAkQAlC5UAmQDrBJkAkQBOCJ4AkQDUDKMAkQD7C6MAkQBdCKcAkQBVCAEAKQHrCRAA
+kQC2DAYAkQD4CwYAqQDrCQYAGQFcC60AqQA5C7UAmQDoC6MAqQBTAL8AsQDrCQYAOQHAAcYAOQHo
+DM8AwQDrCdUA4QDrCQYALgALAKMBLgATAKwBLgAbAMsBLgAjANQBLgArAP0BLgAzAP0BLgA7AP0B
+LgBDANQBLgBLAAMCLgBTAP0BLgBbABoCQwBjAGQCwwFrAGQCoQJ7AGQC6QpzAMsBCQtzAMsBGwC7
+AAMAAQAEACEABQAzAAYANwAHAEEACABFAAkASQAKAFMADgBXAA8AWQAAAF4BgwEAADEGhwEAAM8C
+gwEAABIHhwEAAP4BgwEAALMGhwEAAOgBgwEAAJYGhwEAAHkBgwEAAFoGhwEAAD0CgwEAAPsGhwEA
+ALILgwEAAB0IhwEAAAYLgwEAANcHhwEAAAMLgwEAANQHhwEAAEsMgwEAAC4IhwEAAA0FgwEAAGIH
+hwEAAAUBgwEAAK4FhwEAANwAgwEAAHcFhwEAABoBgwEAAMoFhwEAAE4LgwEAAOgHhwEAAPkMgwEA
+AEYIhwEAAI8BgwEAAHcGhwEAADkBiwEAAPcFhwEAAEQBiwEAAAkGhwEAAHkBiwEAAFoGhwEAALIL
+iwEAAB0IhwEAAAMLiwEAANQHhwEAAAYLiwEAANcHhwEAAI0LiwEAAPgHhwEAAIgBiwEAAHAGhwEA
+ACICgwEAANsGhwEAAIgBiwEAAHAGhwEAAPkBgwEAAK4GhwEAAMkAhwEAAF0FhwEAAAUBhwEAAK4F
+hwEAAOACgwEAACoHhwEAAF4BgwEAADEGhwEAAHkBiwEAAFoGhwEAACICgwEAANsGhwEAAM0EgwEA
+AEIHhwEAAF4BgwEAADEGhwEAADkBiwEAAPcFhwEAAOMJiwEAAIsHhwEAACQJiwEAAHsHhwEAAAMF
+iwEAAFEHhwEAAEQCjwEAAAIHhwEAABsCgwEAANQGhwEAAEQBiwEAAAkGhwEAAM8JlAEAAKUCmQEA
+ABEMngECAAcAAwACAAgABQACAAkABwACAAoACQACAAsACwACAAwADQACAA0ADwACAA4AEQACAA8A
+EwACABAAFQACABEAFwACABIAGQACABMAGwACABQAHQACABUAHwACABYAIQACABcAIwACABgAJQAC
+ABkAJwACABoAKQACABsAKwACABwALQACAB0ALwACAB4AMQACAB8AMwACACAANQACACEANwACACIA
+OQACACMAOwACACQAPQACACUAPwACACYAQQABACoAQwABACsARQABACwARwABAC0ASQABAC4ASwAB
+AC8ATQABADAATwABADEAUQABADIAUwABADMAVQABADQAVwABADUAWQABADYAWwABADcAXQABADgA
+XwABADkAYQABADoAYwABADsAZQABAEAAZwABAEEAaQABAEIAawABAEMAbQABAEgAbwABAEkAcQAB
+AEoAcwABAEsAdQABAEwAdwABAE0AeQABAE4AewABAE8AfQABAFAAfwABAFEAgQABAFYAgwABAFcA
+hQABAFgAhwABAFkAiQABAF4AiwABAF8AjQABAGAAjwABAGEAkQABAGYAkwABAGcAlQABAGgAlwAB
+AGkAmQABAGoAmwABAGsAnQABAGwAnwABAG0AoQABAG4AowABAG8ApQABAHQApwABAHUAqQABAHYA
+qwABAHcArQACAIYArwACAIcAsQABAIgAsQACAIkAswApAD8AagAEgAAAAQAAAAAAAAAAAAAAAAAe
+AAAABAAAAAAAAAAAAAAA3QBfAAAAAAAQAAAAAAAAAAAAAADmAFgMAAAAAAQAAAAAAAAAAAAAAN0A
+eQIAAAAAEAAAAAAAAAAAAAAA5gB1DAAAAAAEAAAAAAAAAAAAAADdAGYIAAAAAAAAAAABAAAAXQoA
+AAAAAAAASGFzaFNldGAxAEludDMyAERpY3Rpb25hcnlgMgBTQ185ZWQ3N2YzODY5NGU0MTQzODQ0
+ZGRjOTBmYWM4OWFiNQA8TW9kdWxlPgBJbnB1dElEAEdldE91dHB1dElEAG1zY29ybGliAFN5c3Rl
+bS5Db2xsZWN0aW9ucy5HZW5lcmljAHRpbWVJZABjaGFubmVsSWQAY291bnRyeUlkAEFkZABJbnB1
+dHNGaW5pc2hlZABNYXJrT3V0cHV0c0ZpbmlzaGVkAHNldF9yYXRpbmdkaXNhYmxlZABnZXRfcmF0
+aW5nc2Rpc2FibGVkAGdldF9jb21tZW50c2Rpc2FibGVkAHNldF9jb21tZW50c2Rpc2FibGVkAGdl
+dF92aWRlb2Vycm9yb3JyZW1vdmVkAHNldF9pZABzZXRfdGltZWlkAHNldF9jaGFubmVsaWQAZ2V0
+X3ZpZGVvaWQAc2V0X3ZpZGVvaWQAZ2V0X2NhdGVnb3J5aWQAc2V0X2NhdGVnb3J5aWQAc2V0X2Nv
+dW50cnlpZABkZWZhdWx0SW5zdGFuY2UAZ2V0X01lc3NhZ2UAUnVudGltZVR5cGVIYW5kbGUAR2V0
+VHlwZUZyb21IYW5kbGUAQ29uc29sZQBnZXRfdGl0bGUAZ2V0X2NoYW5uZWx0aXRsZQBzZXRfdmlk
+ZW90aXRsZQBJbnB1dE5hbWUAc2V0X25hbWUAc2V0X2NoYW5uZWxuYW1lAERhdGVUaW1lAHNldF90
+aW1lAGdldF9wdWJsaXNodGltZQBXcml0ZUxpbmUATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUGlw
+ZWxpbmUAVHlwZQBTeXN0ZW0uQ29yZQBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNvdXJjZUN1
+bHR1cmUAQXBwbGljYXRpb25TZXR0aW5nc0Jhc2UAUGFyc2UAZ2V0X3RyZW5kaW5nZGF0ZQBzZXRf
+dHJlZG5pbmdkYXRlAEVkaXRvckJyb3dzYWJsZVN0YXRlAENvbXBpbGVyR2VuZXJhdGVkQXR0cmli
+dXRlAERlYnVnZ2VyTm9uVXNlckNvZGVBdHRyaWJ1dGUARGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0
+b3JCcm93c2FibGVBdHRyaWJ1dGUAQXNzZW1ibHlUaXRsZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRl
+bWFya0F0dHJpYnV0ZQBUYXJnZXRGcmFtZXdvcmtBdHRyaWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0
+aW9uQXR0cmlidXRlAEFzc2VtYmx5RGVzY3JpcHRpb25BdHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxh
+eGF0aW9uc0F0dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RBdHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmln
+aHRBdHRyaWJ1dGUAU1NJU1NjcmlwdENvbXBvbmVudEVudHJ5UG9pbnRBdHRyaWJ1dGUAQXNzZW1i
+bHlDb21wYW55QXR0cmlidXRlAFJ1bnRpbWVDb21wYXRpYmlsaXR5QXR0cmlidXRlAFByZUV4ZWN1
+dGUAUG9zdEV4ZWN1dGUAVHJ5R2V0VmFsdWUAdmFsdWUAc2V0X3RhZwBTeXN0ZW0uUnVudGltZS5W
+ZXJzaW9uaW5nAEdldFN0cmluZwBnZXRfTW9udGgAc2V0X21vbnRoAGdldF90aHVtYm5haWxsaW5r
+AFN5c3RlbS5Db21wb25lbnRNb2RlbABTQ185ZWQ3N2YzODY5NGU0MTQzODQ0ZGRjOTBmYWM4OWFi
+NS5kbGwAc2V0X3JhdGluZ2Rpc2FibGVkX0lzTnVsbABnZXRfcmF0aW5nc2Rpc2FibGVkX0lzTnVs
+bABnZXRfY29tbWVudHNkaXNhYmxlZF9Jc051bGwAc2V0X2NvbW1lbnRzZGlzYWJsZWRfSXNOdWxs
+AGdldF92aWRlb2Vycm9yb3JyZW1vdmVkX0lzTnVsbABzZXRfaWRfSXNOdWxsAHNldF90aW1laWRf
+SXNOdWxsAHNldF9jaGFubmVsaWRfSXNOdWxsAGdldF92aWRlb2lkX0lzTnVsbABzZXRfdmlkZW9p
+ZF9Jc051bGwAZ2V0X2NhdGVnb3J5aWRfSXNOdWxsAHNldF9jYXRlZ29yeWlkX0lzTnVsbABzZXRf
+Y291bnRyeWlkX0lzTnVsbABnZXRfdGl0bGVfSXNOdWxsAGdldF9jaGFubmVsdGl0bGVfSXNOdWxs
+AHNldF92aWRlb3RpdGxlX0lzTnVsbABzZXRfbmFtZV9Jc051bGwAc2V0X2NoYW5uZWxuYW1lX0lz
+TnVsbABzZXRfdGltZV9Jc051bGwAZ2V0X3B1Ymxpc2h0aW1lX0lzTnVsbABnZXRfdHJlbmRpbmdk
+YXRlX0lzTnVsbABzZXRfdHJlZG5pbmdkYXRlX0lzTnVsbABzZXRfdGFnX0lzTnVsbABzZXRfbW9u
+dGhfSXNOdWxsAGdldF90aHVtYm5haWxsaW5rX0lzTnVsbABzZXRfeWVhcl9Jc051bGwAc2V0X3F1
+YXJ0ZXJfSXNOdWxsAGdldF9saWtlc19Jc051bGwAc2V0X2xpa2VzX0lzTnVsbABnZXRfZGlzbGlr
+ZXNfSXNOdWxsAHNldF9kaXNsaWtlc19Jc051bGwAZ2V0X3RhZ3NfSXNOdWxsAHNldF9jb21tZW50
+c19Jc051bGwAZ2V0X3ZpZXdzX0lzTnVsbABzZXRfdmlld3NfSXNOdWxsAGdldF9jb21tZW50Y291
+bnRfSXNOdWxsAGdldF9jb3VudHJ5X0lzTnVsbABTZXROdWxsAHNldF9JdGVtAFN5c3RlbQByZXNv
+dXJjZU1hbgBCb29sZWFuAFNjcmlwdE1haW4AU3lzdGVtLkNvbmZpZ3VyYXRpb24AU3lzdGVtLkds
+b2JhbGl6YXRpb24AU3lzdGVtLlJlZmxlY3Rpb24ASW52YWxpZE9wZXJhdGlvbkV4Y2VwdGlvbgBT
+dHJpbmdDb21wYXJpc29uAEN1bHR1cmVJbmZvAE91dHB1dE5hbWVNYXAAT3V0cHV0TWFwAGdldF9Z
+ZWFyAHNldF95ZWFyAENoYXIASUZvcm1hdFByb3ZpZGVyAElucHV0MEJ1ZmZlcgBEVGltZUJ1ZmZl
+cgBQaXBlbGluZUJ1ZmZlcgBEQ2hhbm5lbEJ1ZmZlcgBGVmlkZW9CdWZmZXIARFZpZGVvSW5mb0J1
+ZmZlcgBEVGFnc0J1ZmZlcgBTY3JpcHRCdWZmZXIARENhdGVnb3J5QnVmZmVyAERDb3VudHJ5QnVm
+ZmVyAGdldF9SZXNvdXJjZU1hbmFnZXIAc2V0X3F1YXJ0ZXIALmN0b3IALmNjdG9yAE91dHB1dElE
+cwBTeXN0ZW0uRGlhZ25vc3RpY3MAY291bnRyaWVzSWRzAHZpZGVvc0lkcwBTeXN0ZW0uUnVudGlt
+ZS5Db21waWxlclNlcnZpY2VzAFN5c3RlbS5SZXNvdXJjZXMAU0NfOWVkNzdmMzg2OTRlNDE0Mzg0
+NGRkYzkwZmFjODlhYjUuUHJvcGVydGllcy5SZXNvdXJjZXMucmVzb3VyY2VzAERlYnVnZ2luZ01v
+ZGVzAFNDXzllZDc3ZjM4Njk0ZTQxNDM4NDRkZGM5MGZhYzg5YWI1LlByb3BlcnRpZXMAZ2V0X2xp
+a2VzAHNldF9saWtlcwBnZXRfZGlzbGlrZXMAc2V0X2Rpc2xpa2VzAFZhcmlhYmxlcwBEYXRlVGlt
+ZVN0eWxlcwBCdWZmZXJDb2x1bW5JbmRleGVzAEdldENvbHVtbkluZGV4ZXMAZ2V0X3RhZ3MAU2V0
+dGluZ3MARXF1YWxzAENvbnRhaW5zAENvbm5lY3Rpb25zAEJ1ZmZlcnMAcXVhcnRlcnMAc2V0X2Nv
+bW1lbnRzAEZpbmlzaE91dHB1dHMAZ2V0X3ZpZXdzAHNldF92aWV3cwBDcmVhdGVOZXdPdXRwdXRS
+b3dzAENvbmNhdABUcnlQYXJzZUV4YWN0AE9iamVjdABnZXRfRW5kT2ZSb3dzZXQAU2V0RW5kT2ZS
+b3dzZXQAU3BsaXQAZ2V0X0RlZmF1bHQAVXNlckNvbXBvbmVudABQYXJlbnRDb21wb25lbnQAU2Ny
+aXB0Q29tcG9uZW50AGdldF9jb21tZW50Y291bnQATWljcm9zb2Z0LlNxbFNlcnZlci5UeFNjcmlw
+dABNaWNyb3NvZnQuU3FsU2VydmVyLlBpcGVsaW5lSG9zdABJbnB1dDBfUHJvY2Vzc0lucHV0AFBy
+aW1lT3V0cHV0AEFkZFJvdwBJbnB1dDBfUHJvY2Vzc0lucHV0Um93AE5leHRSb3cAQ29udGFpbnNL
+ZXkAZ2V0X0Fzc2VtYmx5AGdldF9jb3VudHJ5AAAAAAABADl5AHkAeQB5AC0ATQBNAC0AZABkACcA
+VAAnAEgASAA6AG0AbQA6AHMAcwAuAGYAZgBmACcAWgAnAAEXUwB6AGMAegBlAGcA8wBCAXkAOgAg
+AAGAm0kAcwBOAHUAbABsACAAcAByAG8AcABlAHIAdAB5ACAAYwBhAG4AbgBvAHQAIABiAGUAIABz
+AGUAdAAgAHQAbwAgAEYAYQBsAHMAZQAuACAAQQBzAHMAaQBnAG4AIABhACAAdgBhAGwAdQBlACAA
+dABvACAAdABoAGUAIABjAG8AbAB1AG0AbgAgAGkAbgBzAHQAZQBhAGQALgAAD0kAbgBwAHUAdAAg
+ADAAAA9GAF8AVgBpAGQAZQBvAAATRABfAEMAbwB1AG4AdAByAHkAABlEAF8AVgBpAGQAZQBvAF8A
+SQBuAGYAbwAAFUQAXwBDAGEAdABlAGcAbwByAHkAAA1EAF8AVABhAGcAcwAADUQAXwBUAGkAbQBl
+AAATRABfAEMAaABhAG4AbgBlAGwAAHFTAEMAXwA5AGUAZAA3ADcAZgAzADgANgA5ADQAZQA0ADEA
+NAAzADgANAA0AGQAZABjADkAMABmAGEAYwA4ADkAYQBiADUALgBQAHIAbwBwAGUAcgB0AGkAZQBz
+AC4AUgBlAHMAbwB1AHIAYwBlAHMAACeVz5ffLsxNkxrCHXQvm1IABCABAQgDIAABBSABARERBCAB
+AQ4FIAEBEWkNBwgICBFBCB0OCA4SRQUVEj0BDgUgAQITAAQAAQgOBAABAg4GFRI5Ag4ICCACAhMA
+EBMBByACARMAEwEOAAUCDg4SgIERgIUQEUEDIAAIBhUSOQIICAYgAR0OHQMDIAAOBQACDg4OBAAB
+AQ4JIAMBEk0dCBJRAwYSTQMGHQgEIAEOCAQgAQIIAyAAAgUgAgEIHAcgAgIOEYCZBSABHQgIAwcB
+CAYAAggSUQ4IAAESgJ0RgKEFIAASgKUHIAIBDhKApQi3elxWGTTgiQiJhF3NgIDMkQcGFRI5AggI
+AgYIBwYVEjkCDggGBhUSPQEOAwYSMAMGEjQDBhIQAwYSFAMGEhgDBhIcAwYSIAMGEiQDBhIoAwYS
+VQMGEmEDBhJlAwYSPAUgAQESDAQgAQECBSABARFBCSAEAQgOEk0SUQsgBAEIHQgdEk0SUQUgAQES
+VQQAABJhBAAAEmUFAAEBEmUEAAASPAMAAAEDKAAOAygAAgMoAAgEKAARQQQIABJhBAgAEmUECAAS
+PAgBAAgAAAAAAB4BAAEAVAIWV3JhcE5vbkV4Y2VwdGlvblRocm93cwEIAQACAAAAAAAoAQAjU0Nf
+OWVkNzdmMzg2OTRlNDE0Mzg0NGRkYzkwZmFjODlhYjUAAAUBAAAAABYBABFDb3B5cmlnaHQgQCAg
+MjAyNAAASQEAGi5ORVRGcmFtZXdvcmssVmVyc2lvbj12NC43AQBUDhRGcmFtZXdvcmtEaXNwbGF5
+TmFtZRIuTkVUIEZyYW1ld29yayA0LjcEAQAAAAAAALQAAADOyu++AQAAAJEAAABsU3lzdGVtLlJl
+c291cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVy
+ZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5I1N5c3RlbS5SZXNvdXJj
+ZXMuUnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFEUEFEULQAAAAYUQAAAAAAAAAAAAAy
+UQAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJFEAAAAAAAAAAAAAAABfQ29yRGxsTWFpbgBtc2Nv
+cmVlLmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABABAAAAAYAACA
-AAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAAAABIAAAAWGAAAOwDAAAA
-AAAAAAAAAOwDNAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBPAAAAAAC9BO/+AAABAAAA
-AQAAAAAAAAABAAAAAAA/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAARAAAAAEAVgBhAHIARgBp
-AGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBvAG4AAAAAAAAAsARMAwAA
-AQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAAAoAwAAAQAwADAAMAAwADAANABiADAAAAAa
-AAEAAQBDAG8AbQBtAGUAbgB0AHMAAAAAAAAAIgABAAEAQwBvAG0AcABhAG4AeQBOAGEAbQBlAAAA
-AAAAAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AAAAAAFMAQwBfADkAZQBk
-ADcANwBmADMAOAA2ADkANABlADQAMQA0ADMAOAA0ADQAZABkAGMAOQAwAGYAYQBjADgAOQBhAGIA
-NQAAADAACAABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAALgAwAC4AMAAAAHAAKAAB
-AEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAAUwBDAF8AOQBlAGQANwA3AGYAMwA4ADYAOQA0AGUA
-NAAxADQAMwA4ADQANABkAGQAYwA5ADAAZgBhAGMAOAA5AGEAYgA1AC4AZABsAGwAAABIABIAAQBM
-AGUAZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQAAABDAG8AcAB5AHIAaQBnAGgAdAAgAEAAIAAgADIA
-MAAyADQAAAAqAAEAAQBMAGUAZwBhAGwAVAByAGEAZABlAG0AYQByAGsAcwAAAAAAAAAAAHgAKAAB
-AE8AcgBpAGcAaQBuAGEAbABGAGkAbABlAG4AYQBtAGUAAABTAEMAXwA5AGUAZAA3ADcAZgAzADgA
-NgA5ADQAZQA0ADEANAAzADgANAA0AGQAZABjADkAMABmAGEAYwA4ADkAYQBiADUALgBkAGwAbAAA
-AGgAJAABAFAAcgBvAGQAdQBjAHQATgBhAG0AZQAAAAAAUwBDAF8AOQBlAGQANwA3AGYAMwA4ADYA
-OQA0AGUANAAxADQAMwA4ADQANABkAGQAYwA5ADAAZgBhAGMAOAA5AGEAYgA1AAAANAAIAAEAUABy
-AG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgAwAC4AMAAAADgACAABAEEAcwBzAGUA
-bQBiAGwAeQAgAFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAQAAAAGAAAgAAA
+AAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAASAAAAFhgAADsAwAAAAAA
+AAAAAADsAzQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAAAAAAvQTv/gAAAQAAAAEA
+AAAAAAAAAQAAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQAAAABAFYAYQByAEYAaQBs
+AGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBuAAAAAAAAALAETAMAAAEA
+UwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAKAMAAAEAMAAwADAAMAAwADQAYgAwAAAAGgAB
+AAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAACIAAQABAEMAbwBtAHAAYQBuAHkATgBhAG0AZQAAAAAA
+AAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAAAABTAEMAXwA5AGUAZAA3
+ADcAZgAzADgANgA5ADQAZQA0ADEANAAzADgANAA0AGQAZABjADkAMABmAGEAYwA4ADkAYQBiADUA
+AAAwAAgAAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4AMAAuADAAAABwACgAAQBJ
+AG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAQwBfADkAZQBkADcANwBmADMAOAA2ADkANABlADQA
+MQA0ADMAOAA0ADQAZABkAGMAOQAwAGYAYQBjADgAOQBhAGIANQAuAGQAbABsAAAASAASAAEATABl
+AGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBvAHAAeQByAGkAZwBoAHQAIABAACAAIAAyADAA
+MgA0AAAAKgABAAEATABlAGcAYQBsAFQAcgBhAGQAZQBtAGEAcgBrAHMAAAAAAAAAAAB4ACgAAQBP
+AHIAaQBnAGkAbgBhAGwARgBpAGwAZQBuAGEAbQBlAAAAUwBDAF8AOQBlAGQANwA3AGYAMwA4ADYA
+OQA0AGUANAAxADQAMwA4ADQANABkAGQAYwA5ADAAZgBhAGMAOAA5AGEAYgA1AC4AZABsAGwAAABo
+ACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBtAGUAAAAAAFMAQwBfADkAZQBkADcANwBmADMAOAA2ADkA
+NABlADQAMQA0ADMAOAA0ADQAZABkAGMAOQAwAGYAYQBjADgAOQBhAGIANQAAADQACAABAFAAcgBv
+AGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAA4AAgAAQBBAHMAcwBlAG0A
+YgBsAHkAIABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgAwAC4AMAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -3425,7 +3930,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAwAAAA4PQAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAAMAAAARDEAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -3434,7 +3939,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                   </arrayElements>
                 </property>
                 <property
@@ -3470,7 +3975,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                   dataType="System.String"
                   description="Checksum to match component metedata against compiled codes."
                   name="MetadataChecksum140"
-                  typeConverter="NOTBROWSABLE">B4</property>
+                  typeConverter="NOTBROWSABLE">65</property>
                 <property
                   dataType="System.String"
                   name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
@@ -3586,6 +4091,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       cachedLength="2000"
                       cachedName="tags"
                       lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[tags]" />
+                    <inputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Inputs[Input 0].Columns[country]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="country"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load.Outputs[Flat File Source Output].Columns[country]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -3603,13 +4115,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       length="50"
                       lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[id]"
                       name="id" />
-                    <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[video_title]"
-                      codePage="1250"
-                      dataType="str"
-                      length="200"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[video_title]"
-                      name="video_title" />
                     <outputColumn
                       refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[time_id]"
                       dataType="i4"
@@ -3646,22 +4151,69 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=]]></arrayElement>
                       lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[comments]"
                       name="comments" />
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[rating_disabled]"
-                      dataType="bool"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[rating_disabled]"
-                      name="rating_disabled" />
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[country_id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[country_id]"
+                      name="country_id" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Country]"
+                  hasSideEffects="true"
+                  name="D_Country">
+                  <outputColumns>
                     <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[comments_disabled]"
-                      dataType="bool"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[comments_disabled]"
-                      name="comments_disabled" />
-                    <outputColumn
-                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[trending_date]"
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Country].Columns[name]"
                       codePage="1250"
                       dataType="str"
                       length="50"
-                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[F_Video].Columns[trending_date]"
-                      name="trending_date" />
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Country].Columns[name]"
+                      name="name" />
+                    <outputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Country].Columns[country_id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Country].Columns[country_id]"
+                      name="country_id" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Video_Info]"
+                  hasSideEffects="true"
+                  name="D_Video_Info">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Video_Info].Columns[video_title]"
+                      codePage="1250"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Video_Info].Columns[video_title]"
+                      name="video_title" />
+                    <outputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Video_Info].Columns[rating_disabled]"
+                      dataType="bool"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Video_Info].Columns[rating_disabled]"
+                      name="rating_disabled" />
+                    <outputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Video_Info].Columns[comments_disabled]"
+                      dataType="bool"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Video_Info].Columns[comments_disabled]"
+                      name="comments_disabled" />
+                    <outputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Video_Info].Columns[tredning_date]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Video_Info].Columns[tredning_date]"
+                      name="tredning_date" />
+                    <outputColumn
+                      refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Video_Info].Columns[video_id]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Video_Info].Columns[video_id]"
+                      name="video_id" />
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -6035,6 +6587,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               name="D_Channel"
               startId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Channel]" />
             <path
+              refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[D_Country]"
+              endId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 5.Inputs[OLE DB Destination Input]"
+              name="D_Country"
+              startId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Country]" />
+            <path
               refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[D_Time]"
               endId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
               name="D_Time"
@@ -6044,6 +6601,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
               endId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 3.Inputs[OLE DB Destination Input]"
               name="D_VideoTags"
               startId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Tags]" />
+            <path
+              refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[D_Video_Info]"
+              endId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6.Inputs[OLE DB Destination Input]"
+              name="D_Video_Info"
+              startId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Outputs[D_Video_Info]" />
             <path
               refId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[Flat File Source Output]"
               endId="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component.Inputs[Input 0]"
@@ -6098,7 +6660,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{025E8FF0-8B8F-454B-8A39-DFC12CD210FE}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="ALTER TABLE F_Videos&#xA;ADD FOREIGN KEY (time_id) REFERENCES D_Time(time_id); &#xA;&#xA;ALTER TABLE F_Videos&#xA;ADD FOREIGN KEY (channel_id) REFERENCES D_Channel(channel_id); &#xA;&#xA;ALTER TABLE D_Tags&#xA;ADD FOREIGN KEY (video_id) REFERENCES F_Videos(id); &#xA;&#xA;ALTER TABLE F_Videos&#xA;ADD FOREIGN KEY (category_id) REFERENCES D_Category(category_id); " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="ALTER TABLE F_Videos&#xA;ADD FOREIGN KEY (time_id) REFERENCES D_Time(time_id); &#xA;&#xA;ALTER TABLE F_Videos&#xA;ADD FOREIGN KEY (channel_id) REFERENCES D_Channel(channel_id); &#xA;&#xA;ALTER TABLE D_Tags&#xA;ADD FOREIGN KEY (video_id) REFERENCES F_Videos(id); &#xA;&#xA;ALTER TABLE F_Videos&#xA;ADD FOREIGN KEY (category_id) REFERENCES D_Category(category_id); &#xA;&#xA;ALTER TABLE F_Videos&#xA;ADD FOREIGN KEY (country_id) REFERENCES D_Country(country_id); " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -6116,7 +6678,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{025E8FF0-8B8F-454B-8A39-DFC12CD210FE}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="CREATE TABLE [F_Videos] (&#xA;    [id] varchar(50) PRIMARY KEY,&#xA;    [video_title] varchar(200),&#xA;    [time_id] int,&#xA;    [channel_id] int,&#xA;    [category_id] int,&#xA;    [views] int,&#xA;    [dislikes] int,&#xA;    [likes] int,&#xA;    [comments] int,&#xA;    [rating_disabled] bit,&#xA;    [comments_disabled] bit,&#xA;    [trending_date] varchar(50)&#xA;)&#xA;&#xA;CREATE TABLE [D_Tags] (&#xA;    [tag_id] int identity(1,1) PRIMARY KEY,&#xA;    [tag] varchar(100),&#xA;    [video_id] varchar(50)&#xA;)&#xA;&#xA;CREATE TABLE [D_Time] (&#xA;    [time_id] int PRIMARY KEY,&#xA;    [quarter] int,&#xA;    [year] int,&#xA;    [month] int,&#xA;    [time] datetime&#xA;)&#xA;&#xA;CREATE TABLE [D_Channel]  (&#xA;    [channel_name] varchar(50),&#xA;    [channel_id] int  PRIMARY KEY&#xA;)&#xA;&#xA;CREATE TABLE [D_Category] (&#xA;    [category_id] int PRIMARY KEY,&#xA;    [name] varchar(50)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="CREATE TABLE [F_Videos] (&#xA;    [id] varchar(50) PRIMARY KEY,&#xA;    [time_id] int,&#xA;    [channel_id] int,&#xA;    [category_id] int,&#xA;    [country_id] int,&#xA;    [views] int,&#xA;    [dislikes] int,&#xA;    [likes] int,&#xA;    [comments] int&#xA;)&#xA;&#xA;CREATE TABLE [D_Video_Info] (&#xA;    [video_info_id] int identity(1,1) PRIMARY KEY,&#xA;    [video_id] varchar(50),&#xA;    [video_title] varchar(200),&#xA;    [rating_disabled] bit,&#xA;    [comments_disabled] bit,&#xA;    [trending_date] varchar(50)&#xA;)&#xA;&#xA;CREATE TABLE [D_Tags] (&#xA;    [tag_id] int identity(1,1) PRIMARY KEY,&#xA;    [tag] varchar(100),&#xA;    [video_id] varchar(50)&#xA;)&#xA;&#xA;CREATE TABLE [D_Time] (&#xA;    [time_id] int PRIMARY KEY,&#xA;    [quarter] int,&#xA;    [year] int,&#xA;    [month] int,&#xA;    [time] datetime&#xA;)&#xA;&#xA;CREATE TABLE [D_Channel]  (&#xA;    [channel_name] varchar(50),&#xA;    [channel_id] int  PRIMARY KEY&#xA;)&#xA;&#xA;CREATE TABLE [D_Category] (&#xA;    [category_id] int PRIMARY KEY,&#xA;    [name] varchar(50)&#xA;)&#xA;&#xA;CREATE TABLE [D_Country] (&#xA;    [country_id] int PRIMARY KEY,&#xA;    [name] varchar(50)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -6134,7 +6696,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{025E8FF0-8B8F-454B-8A39-DFC12CD210FE}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="DROP TABLE IF EXISTS D_Tags;&#xA;DROP TABLE IF EXISTS F_Videos;&#xA;DROP TABLE IF EXISTS D_Time;&#xA;DROP TABLE IF EXISTS D_Channel;&#xA;DROP TABLE IF EXISTS D_Category;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="DROP TABLE IF EXISTS D_Tags;&#xA;DROP TABLE IF EXISTS F_Videos;&#xA;DROP TABLE IF EXISTS D_Time;&#xA;DROP TABLE IF EXISTS D_Channel;&#xA;DROP TABLE IF EXISTS D_Category;&#xA;DROP TABLE IF EXISTS D_Country;&#xA;DROP TABLE IF EXISTS D_Video_Info;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -6269,54 +6831,50 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         <NodeLayout
           Size="186,42"
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 3"
-          TopLeft="515,498" />
-        <NodeLayout
-          Size="176,42"
-          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component 2"
-          TopLeft="114,404" />
+          TopLeft="515,512" />
         <NodeLayout
           Size="108,42"
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Sort 1"
-          TopLeft="342.5,233.5" />
+          TopLeft="342.5,247.5" />
         <NodeLayout
           Size="186,42"
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 1"
-          TopLeft="721,493" />
+          TopLeft="721,507" />
         <NodeLayout
-          Size="283,42"
-          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component JSON Categories Load"
-          TopLeft="82,94" />
+          Size="176,42"
+          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component 2"
+          TopLeft="114,418" />
         <NodeLayout
           Size="177,42"
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination"
-          TopLeft="325,497" />
+          TopLeft="325,511" />
         <NodeLayout
           Size="186,42"
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 4"
-          TopLeft="115,498" />
+          TopLeft="115,512" />
         <NodeLayout
           Size="99,42"
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Sort"
-          TopLeft="179.5,193.5" />
+          TopLeft="179.5,207.5" />
         <NodeLayout
           Size="186,42"
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 2"
-          TopLeft="926,493" />
+          TopLeft="926,507" />
         <NodeLayout
           Size="167,42"
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component"
-          TopLeft="589,236" />
+          TopLeft="589,250" />
         <NodeLayout
-          Size="226,42"
-          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load"
-          TopLeft="564,96" />
+          Size="283,42"
+          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Script Component JSON Categories Load"
+          TopLeft="82,108" />
         <NodeLayout
           Size="133,42"
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Merge Join"
-          TopLeft="164,288" />
+          TopLeft="164,302" />
         <EdgeLayout
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[Sort Output1]"
-          TopLeft="229.75,235.5">
+          TopLeft="229.75,249.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6338,7 +6896,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[Sort Output]"
-          TopLeft="342.5,254.5">
+          TopLeft="342.5,268.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6372,7 +6930,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[Output 01]"
-          TopLeft="205,446">
+          TopLeft="205,460">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6394,7 +6952,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[Output 0]"
-          TopLeft="226.25,136">
+          TopLeft="226.25,150">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6416,7 +6974,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[Merge Join Output]"
-          TopLeft="230.5,330">
+          TopLeft="230.5,344">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6450,7 +7008,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[F_Video]"
-          TopLeft="624.8,278">
+          TopLeft="624.8,292">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6485,30 +7043,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[Flat File Source Output]"
-          TopLeft="674.75,138">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,98"
-              Start="0,0"
-              End="0,90.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,90.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[D_VideoTags]"
-          TopLeft="656.6,278">
+          TopLeft="656.6,292">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6544,7 +7080,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[D_Time]"
-          TopLeft="688.4,278">
+          TopLeft="688.4,292">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6580,43 +7116,43 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[D_Channel]"
-          TopLeft="720.2,278">
+          TopLeft="699,292">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="298.8,215"
+              EndConnector="320,215"
               Start="0,0"
-              End="298.8,207.5">
+              End="320,207.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,60.5180217937971" />
+                    End="0,83.2241992882562" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,60.5180217937971"
-                    Point2="0,64.5180217937971"
-                    Point3="4,64.5180217937971" />
+                    Point1="0,83.2241992882562"
+                    Point2="0,87.2241992882562"
+                    Point3="4,87.2241992882562" />
                   <mssgle:LineSegment
-                    End="294.8,64.5180217937971" />
+                    End="316,87.2241992882562" />
                   <mssgle:CubicBezierSegment
-                    Point1="294.8,64.5180217937971"
-                    Point2="298.8,64.5180217937971"
-                    Point3="298.8,68.5180217937971" />
+                    Point1="316,87.2241992882562"
+                    Point2="320,87.2241992882562"
+                    Point3="320,91.2241992882562" />
                   <mssgle:LineSegment
-                    End="298.8,207.5" />
+                    End="320,207.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="125.21787109375,69.5180217937971,48.3642578125,11.0625"
+              BoundingBox="135.81787109375,92.2241992882562,48.3642578125,11.0625"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[D_Category]"
-          TopLeft="589,255.75">
+          TopLeft="589,269.75">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -6635,6 +7171,100 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="-91.93693359375,5,52.8738671875,11.4677734375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="226,42"
+          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\Flat File Source YT Data Load"
+          TopLeft="566,118" />
+        <EdgeLayout
+          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[Flat File Source Output]"
+          TopLeft="675.75,160">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,90"
+              Start="0,0"
+              End="0,82.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,82.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 5"
+          TopLeft="1136.25,508.75" />
+        <EdgeLayout
+          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[D_Country]"
+          TopLeft="725.5,292">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="503.75,216.75"
+              Start="0,0"
+              End="503.75,209.25">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.9901315789474" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,53.9901315789474"
+                    Point2="0,57.9901315789474"
+                    Point3="4,57.9901315789474" />
+                  <mssgle:LineSegment
+                    End="499.75,57.9901315789474" />
+                  <mssgle:CubicBezierSegment
+                    Point1="499.75,57.9901315789474"
+                    Point2="503.75,57.9901315789474"
+                    Point3="503.75,61.9901315789474" />
+                  <mssgle:LineSegment
+                    End="503.75,209.25" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="227.87806640625,62.9901315789474,47.9938671875,11.4140625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6"
+          TopLeft="1033.75,251.25" />
+        <EdgeLayout
+          Id="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category.Paths[D_Video_Info]"
+          TopLeft="756,271.625">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="277.75,0"
+              Start="0,0"
+              End="270.25,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="270.25,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="104.58296875,5,61.0840625,11.111328125"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -6668,6 +7298,19 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 4">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination">
     <Properties>
       <Property>
@@ -6682,6 +7325,32 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==]]></arrayElement>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 5">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow F_Videos, D_Time, D_Tags, D_Channel, D_Category\OLE DB Destination 6">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
